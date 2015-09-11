@@ -1,0 +1,22 @@
+//
+//  veli-Prefix.pch
+//  veli
+//
+//  Created by Romain Bousquet on 19/03/2015.
+//  Copyright (c) 2015 Romain Bousquet. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "RBTDebugMaccros.h"
+#import "RBTTheme.h"
+#import "NSDictionary+RBT.h"
+#import "UIView+RBT.h"
+#import "UIViewController+IBP.h"
+#import "UIAlertView+RBTAlertView.h"
+#import "RBTParsing.h"
+
+#endif

@@ -1,0 +1,10 @@
+platform :ios, '7.0'
+
+pod 'AFNetworking', :inhibit_warnings => true
+pod 'SDWebImage', '~> 3.6'
+pod 'Reachability', '~> 3.1'
+pod 'MagicalRecord', :inhibit_warnings => true
+pod 'Facebook-iOS-SDK', '4.0'
+pod 'VideoCore', :inhibit_warnings => true
+pod 'EventSource', '~> 1.0.0'
+pod 'ReactiveCocoa', '~> 2.5'
