@@ -35,11 +35,6 @@ static CGFloat const kCellSize = 50.f;
 	[self configureCollection];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 - (void)configureCollection
 {
 	self.collectionLayout = [[RBTCollectionViewLayout alloc] init];
@@ -102,9 +97,7 @@ static CGFloat const kCellSize = 50.f;
 	[self.collectionView performBatchUpdates:^{
 		[self.friendArray removeObjectAtIndex:index];
 		[self.collectionView deleteItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:index inSection:0]]];
-	} completion:^(BOOL finished) {
-		
-	}];
+	} completion:nil];
 }
 
 - (void)hasJoin:(RBTJoinLeftInformations *)userInformations
@@ -118,9 +111,7 @@ static CGFloat const kCellSize = 50.f;
 	[self.collectionView performBatchUpdates:^{
 		[self.friendArray addObject:userInformations];
 		[self.collectionView insertItemsAtIndexPaths:@[[NSIndexPath indexPathForItem:self.friendArray.count-1 inSection:0]]];
-	} completion:^(BOOL finished) {
-		
-	}];
+	} completion:nil];
 }
 
 @end

@@ -13,11 +13,6 @@
 
 @implementation RBTApi
 
-- (void)dealloc
-{
-	[[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
 + (RBTApi *)sharedApi
 {
 	static RBTApi *sharedInstance = nil;

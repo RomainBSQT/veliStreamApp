@@ -33,6 +33,8 @@ NSString *const kMainEventName = @"message";
 
 @implementation RBTServerSentEventHelper
 
+#pragma mark - Setup
+
 + (instancetype)SSEWithUrl:(NSURL *)url
 {
 	RBTServerSentEventHelper *eventHelper = [[RBTServerSentEventHelper alloc] init];

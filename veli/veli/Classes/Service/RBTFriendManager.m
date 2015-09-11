@@ -10,8 +10,8 @@
 #import "RBTApi+Friends.h"
 
 typedef NS_ENUM(NSInteger, RBTFriendListState) {
-	RBTFriendListStateEmpty,
-	RBTFriendListStateFull
+	RBTFriendListStateNotLoaded,
+	RBTFriendListStateLoaded
 };
 
 @interface RBTFriendManager ()
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, RBTFriendListState) {
 {
 	self = [super init];
 	if (self) {
-		_cacheState = RBTFriendListStateEmpty;
+		_cacheState = RBTFriendListStateNotLoaded;
 		_friendArray = [[NSMutableArray alloc] init];
 	}
 	return self;
@@ -50,9 +50,9 @@ typedef NS_ENUM(NSInteger, RBTFriendListState) {
 - (RACSignal *)friends
 {
 	switch (self.cacheState) {
-		case RBTFriendListStateEmpty:
+		case RBTFriendListStateNotLoaded:
 			return [self loadFriends];
-		case RBTFriendListStateFull:
+		case RBTFriendListStateLoaded:
 			return [self cacheContent];
 	}
 }
@@ -65,14 +65,14 @@ typedef NS_ENUM(NSInteger, RBTFriendListState) {
 }
 
 - (RACSignal *)loadFriends
-{
+{	
 	@weakify(self)
 	return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
 		[[RBTApi sharedApi] getFriendsWithSuccess:^(NSArray *friendArray) {
 			@strongify(self)
 			self.friendArray = friendArray;
 			[subscriber sendNext:friendArray];
-			self.cacheState = RBTFriendListStateFull;
+			self.cacheState = RBTFriendListStateLoaded;
 			[subscriber sendCompleted];
 		} failure:^(NSError *error) {
 			[subscriber sendError:error];

@@ -60,6 +60,8 @@
 	return instanceArray;
 }
 
+#pragma mark - Equality
+
 - (BOOL)isEqual:(id)object
 {
 	if (self == object) {

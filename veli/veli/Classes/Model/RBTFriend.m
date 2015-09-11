@@ -12,6 +12,8 @@
 
 @implementation RBTFriend
 
+#pragma mark - Setup
+
 + (instancetype)friendWithDictionary:(NSDictionary *)dictionary
 {
 	RBTFriend *newFriend = [[RBTFriend alloc] init];

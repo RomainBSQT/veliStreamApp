@@ -18,11 +18,6 @@
 
 @implementation RBTLiveInformationsView
 
-- (void)awakeFromNib
-{
-	[super awakeFromNib];
-}
-
 #pragma mark - Setters
 
 - (void)setCurrentFriend:(RBTFriend *)currentFriend

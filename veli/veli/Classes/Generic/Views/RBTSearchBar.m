@@ -39,11 +39,6 @@
 	[self setIdleState];
 }
 
-- (void)layoutSubviews
-{
-	[super layoutSubviews];
-}
-
 - (void)setSelectedState
 {
 	self.textField.layer.borderColor = [[RBTTheme colorDarkGray] CGColor];
@@ -69,25 +64,6 @@
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 {
 	[self setSelectedState];
-	return YES;
-}
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField
-{
-}
-
-- (BOOL)textFieldShouldEndEditing:(UITextField *)textField
-{
-	return YES;
-}
-
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
-{
-	return YES;
-}
-
-- (BOOL)textFieldShouldClear:(UITextField *)textField
-{
 	return YES;
 }
 

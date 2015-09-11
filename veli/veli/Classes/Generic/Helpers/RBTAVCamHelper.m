@@ -35,9 +35,9 @@
 {
 	self = [super init];
 	if (self) {
-		self.isConfigured = NO;
-		self.session = [[AVCaptureSession alloc] init];
-		self.sessionQueue = dispatch_queue_create("session_queue", DISPATCH_QUEUE_SERIAL);
+		_isConfigured = NO;
+		_session = [[AVCaptureSession alloc] init];
+		_sessionQueue = dispatch_queue_create("session_queue", DISPATCH_QUEUE_SERIAL);
 	}
 	return self;
 }

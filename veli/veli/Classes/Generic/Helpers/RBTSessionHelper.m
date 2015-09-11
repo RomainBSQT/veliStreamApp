@@ -60,10 +60,7 @@ typedef void (^RBTAuthenticationFailure)(NSError *error, enum RBTAuthenticationS
 
 - (BOOL)isFacebookSessionActive
 {
-	if ([FBSDKAccessToken currentAccessToken]) {
-		return YES;
-	}
-	return NO;
+	return [FBSDKAccessToken currentAccessToken] != nil;
 }
 
 - (void)facebookAuthenticationWithSuccess:(RBTAuthenticationSuccess)success failure:(RBTAuthenticationFailure)failure

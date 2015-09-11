@@ -13,7 +13,6 @@
 
 FOUNDATION_EXPORT NSString *const kMainEventName;
 
-
 @protocol RBTServerSentEventProtocol <NSObject>
 
 @property (nonatomic, strong) NSNumber *audience;
@@ -25,7 +24,6 @@ FOUNDATION_EXPORT NSString *const kMainEventName;
 typedef void (^RBTServerSentEvent)(id<RBTServerSentEventProtocol> eventDatas);
 typedef void (^RBTServerSentError)(NSError *error);
 
-
 @interface RBTServerSentEventDatas : NSObject <RBTServerSentEventProtocol>
 
 @property (nonatomic, strong) NSNumber *audience;
@@ -34,7 +32,6 @@ typedef void (^RBTServerSentError)(NSError *error);
 + (instancetype)eventDatasWithEventArray:(NSArray *)eventArray audience:(NSNumber *)audience;
 
 @end
-
 
 @interface RBTServerSentEventHelper : NSObject
 

@@ -49,7 +49,7 @@
 
 #define PASSWORD_USES_DATA
 
-#import "RBTKeychainWrapper.h"
+#import "KeychainWrapper.h"
 #import <Security/Security.h>
 
 /*

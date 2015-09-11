@@ -56,14 +56,14 @@ typedef NS_ENUM(NSUInteger, RBTAnimationState) {
 	[self.view addSubview:self.animatedView];
 	[self.animatedView setConstraintsForXCenteringInView:self.view];
 	
-	self.animationConstraint = [NSLayoutConstraint constraintWithItem:self.animatedView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual
-															   toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.f constant:kJoinStartStateAnimationXPosition];
+	self.animationConstraint = [NSLayoutConstraint constraintWithItem:self.animatedView
+															attribute:NSLayoutAttributeTop
+															relatedBy:NSLayoutRelationEqual
+															   toItem:self.view
+															attribute:NSLayoutAttributeTop
+														   multiplier:1.f
+															 constant:kJoinStartStateAnimationXPosition];
 	[self.view addConstraint:self.animationConstraint];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
 }
 
 #pragma mark - Public functions

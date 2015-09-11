@@ -15,7 +15,7 @@
 	if (self.count == 0) {
 		return nil;
 	}
-	id poppedObject = self[0];
+	id poppedObject = [self firstObject];
 	[self removeObjectAtIndex:0];
 	return poppedObject;
 }
