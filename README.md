@@ -1,2 +1,2 @@
-# liveproject-ios
-Live project ios app
+# veli-ios
+Live streaming project ios app
