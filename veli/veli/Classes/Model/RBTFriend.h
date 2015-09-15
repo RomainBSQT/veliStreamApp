@@ -11,13 +11,13 @@
 
 @interface RBTFriend : NSObject <RBTParsing>
 
-@property (nonatomic, strong) NSString * distantId;
-@property (nonatomic, strong) NSNumber * live_audience;
-@property (nonatomic, strong) NSNumber * live_status;
-@property (nonatomic, strong) NSString * live_key;
-@property (nonatomic, strong) NSString * username;
-@property (nonatomic, strong) NSString * facebook_social_id;
-@property (nonatomic, strong) NSString * picture_url;
+@property (nonatomic, strong) NSString *distantId;
+@property (nonatomic, strong) NSNumber *live_audience;
+@property (nonatomic, strong) NSNumber *live_status;
+@property (nonatomic, strong) NSString *live_key;
+@property (nonatomic, strong) NSString *username;
+@property (nonatomic, strong) NSString *facebook_social_id;
+@property (nonatomic, strong) NSString *picture_url;
 
 + (instancetype)friendWithDictionary:(NSDictionary *)dictionary;
 
