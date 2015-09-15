@@ -9,51 +9,54 @@
 /* Begin PBXBuildFile section */
 		302E07131ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 302E07121ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.m */; };
 		302FF1751B210C94007980C8 /* NSString+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 302FF1741B210C94007980C8 /* NSString+RBT.m */; };
-		30414ED51B1A768F0034F449 /* RBTServerSentEventHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30414ED41B1A768F0034F449 /* RBTServerSentEventHelper.m */; };
+		304680301BA8E1EE0023426D /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680291BA8E1EE0023426D /* KeychainWrapper.m */; };
+		304680311BA8E1EE0023426D /* RBTAVCamHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046802B1BA8E1EE0023426D /* RBTAVCamHelper.m */; };
+		304680321BA8E1EE0023426D /* RBTServerSentEventHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046802D1BA8E1EE0023426D /* RBTServerSentEventHelper.m */; };
+		304680331BA8E1EE0023426D /* RBTSessionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046802F1BA8E1EE0023426D /* RBTSessionHelper.m */; };
+		304680471BA8E20C0023426D /* RBTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680371BA8E20C0023426D /* RBTCollectionViewCell.m */; };
+		304680481BA8E20C0023426D /* RBTLiveInformationsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680391BA8E20C0023426D /* RBTLiveInformationsView.m */; };
+		304680491BA8E20C0023426D /* RBTLiveInformationsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3046803A1BA8E20C0023426D /* RBTLiveInformationsView.xib */; };
+		3046804A1BA8E20C0023426D /* RBTNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046803C1BA8E20C0023426D /* RBTNavigationBar.m */; };
+		3046804B1BA8E20C0023426D /* RBTNavigationBarTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046803E1BA8E20C0023426D /* RBTNavigationBarTitleView.m */; };
+		3046804C1BA8E20C0023426D /* RBTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680401BA8E20C0023426D /* RBTSearchBar.m */; };
+		3046804D1BA8E20C0023426D /* RBTSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304680411BA8E20C0023426D /* RBTSearchBar.xib */; };
+		3046804E1BA8E20C0023426D /* RBTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680431BA8E20C0023426D /* RBTTableViewCell.m */; };
+		3046804F1BA8E20C0023426D /* RBTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680451BA8E20C0023426D /* RBTTextField.m */; };
+		304680531BA8E24B0023426D /* RBTJoinLeftInformations.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680521BA8E24B0023426D /* RBTJoinLeftInformations.m */; };
+		3046805B1BA8E2600023426D /* RBTJoinLeftUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680561BA8E2600023426D /* RBTJoinLeftUserView.m */; };
+		3046805C1BA8E2600023426D /* RBTJoinLeftUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304680571BA8E2600023426D /* RBTJoinLeftUserView.xib */; };
+		3046805D1BA8E2600023426D /* RBTJoinLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680591BA8E2600023426D /* RBTJoinLeftViewController.m */; };
+		3046805E1BA8E2600023426D /* RBTJoinLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3046805A1BA8E2600023426D /* RBTJoinLeftViewController.xib */; };
+		304680681BA8E2790023426D /* RBTCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680611BA8E2790023426D /* RBTCollectionViewLayout.m */; };
+		304680691BA8E2790023426D /* RBTFriendViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680631BA8E2790023426D /* RBTFriendViewCell.m */; };
+		3046806A1BA8E2790023426D /* RBTFriendViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304680641BA8E2790023426D /* RBTFriendViewCell.xib */; };
+		3046806B1BA8E2790023426D /* RBTViewersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680661BA8E2790023426D /* RBTViewersViewController.m */; };
+		3046806C1BA8E2790023426D /* RBTViewersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304680671BA8E2790023426D /* RBTViewersViewController.xib */; };
 		304F5DC61AEB02C700517C7D /* RBTFriendsInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F5DC41AEB02C700517C7D /* RBTFriendsInviteViewController.m */; };
 		304F5DC71AEB02C700517C7D /* RBTFriendsInviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304F5DC51AEB02C700517C7D /* RBTFriendsInviteViewController.xib */; };
 		304F5DCA1AEB370100517C7D /* RBTAddAllFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F5DC91AEB370100517C7D /* RBTAddAllFriendsCell.m */; };
 		304F5DCC1AEB374400517C7D /* RBTAddAllFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304F5DCB1AEB374400517C7D /* RBTAddAllFriendsCell.xib */; };
-		305ED8681AF519F200FCDA2A /* RBTViewersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 305ED8661AF519F200FCDA2A /* RBTViewersViewController.m */; };
-		305ED8691AF519F200FCDA2A /* RBTViewersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305ED8671AF519F200FCDA2A /* RBTViewersViewController.xib */; };
-		3061E4741ABCF9AE00112362 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3061E4731ABCF9AE00112362 /* KeychainWrapper.m */; };
 		30B57F8C1AD9AD6A00277E64 /* UIViewController+IBP.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B57F8B1AD9AD6A00277E64 /* UIViewController+IBP.m */; };
 		30B57F901AD9B07800277E64 /* RBTPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B57F8F1AD9B07800277E64 /* RBTPlayerViewController.m */; };
 		30B5855A1B07FB0B00136F7C /* RBTApi+Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B585591B07FB0B00136F7C /* RBTApi+Authentication.m */; };
 		30BC60471AC8606C00A055D5 /* RBTFriendListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC60461AC8606C00A055D5 /* RBTFriendListHeaderView.m */; };
-		30BC604E1AC8729200A055D5 /* RBTSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30BC604D1AC8729200A055D5 /* RBTSearchBar.xib */; };
-		30BC60511AC8792A00A055D5 /* RBTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC60501AC8792A00A055D5 /* RBTTextField.m */; };
-		30BC60541AC87B6C00A055D5 /* RBTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC60531AC87B6C00A055D5 /* RBTTableViewCell.m */; };
 		30BC60571AC87BBD00A055D5 /* RBTFriendListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC60561AC87BBD00A055D5 /* RBTFriendListCell.m */; };
 		30BC60591AC87BD300A055D5 /* RBTFriendListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30BC60581AC87BD300A055D5 /* RBTFriendListCell.xib */; };
 		30BD5CAF1B3B4E880043A284 /* RBTFriendManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BD5CAE1B3B4E880043A284 /* RBTFriendManager.m */; };
 		30BD7C981B3F279F0057CC31 /* RBTLocalStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BD7C971B3F279F0057CC31 /* RBTLocalStorageManager.m */; };
 		30BD7C9B1B3F85B70057CC31 /* RBTDataEncryptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BD7C9A1B3F85B70057CC31 /* RBTDataEncryptionManager.m */; };
-		30BE699C1AFAB9C200F7D5F4 /* RBTJoinLeftInformations.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BE699B1AFAB9C200F7D5F4 /* RBTJoinLeftInformations.m */; };
 		30BFC2681AF18AAB00A33959 /* RBTHomeAndStreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFC2671AF18AAB00A33959 /* RBTHomeAndStreamingViewController.m */; };
 		30BFC26A1AF18AB900A33959 /* RBTHomeAndStreamingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30BFC2691AF18AB900A33959 /* RBTHomeAndStreamingViewController.xib */; };
 		30C0D8A11AD2119B003D5576 /* RBTURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0D8A01AD2119B003D5576 /* RBTURLBuilder.m */; };
 		30C0D8AA1AD2232F003D5576 /* RBTApi+Friends.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0D8A91AD2232F003D5576 /* RBTApi+Friends.m */; };
 		30C124501ADF0064009C53D8 /* RBTPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C1244F1ADF0064009C53D8 /* RBTPlayerViewController.xib */; };
-		30C124531ADF3879009C53D8 /* RBTLiveInformationsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C124521ADF3879009C53D8 /* RBTLiveInformationsView.m */; };
-		30C124551ADF388F009C53D8 /* RBTLiveInformationsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C124541ADF388F009C53D8 /* RBTLiveInformationsView.xib */; };
 		30C24F011AC0E1D000CA068D /* RBTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24EFF1AC0E1D000CA068D /* RBTLoginViewController.m */; };
 		30C24F021AC0E1D000CA068D /* RBTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C24F001AC0E1D000CA068D /* RBTLoginViewController.xib */; };
 		30C24F241AC0EB3300CA068D /* UINavigationController+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24F231AC0EB3300CA068D /* UINavigationController+RBT.m */; };
-		30C24F2A1AC0EC5000CA068D /* RBTNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24F291AC0EC5000CA068D /* RBTNavigationBar.m */; };
 		30C24F2D1AC0ECFB00CA068D /* UIImage+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24F2C1AC0ECFB00CA068D /* UIImage+RBT.m */; };
 		30C24F361AC0EFF300CA068D /* RBTFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24F351AC0EFF300CA068D /* RBTFriend.m */; };
 		30C24F391AC0EFF400CA068D /* RBTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24F381AC0EFF400CA068D /* RBTUser.m */; };
-		30C261FA1AF6A7920035CDA0 /* RBTFriendViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C261F81AF6A7920035CDA0 /* RBTFriendViewCell.m */; };
-		30C261FB1AF6A7920035CDA0 /* RBTFriendViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C261F91AF6A7920035CDA0 /* RBTFriendViewCell.xib */; };
-		30C261FE1AF6A7C70035CDA0 /* RBTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C261FD1AF6A7C70035CDA0 /* RBTCollectionViewCell.m */; };
-		30C262041AF6DDDC0035CDA0 /* RBTCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C262031AF6DDDC0035CDA0 /* RBTCollectionViewLayout.m */; };
-		30C31D231AF4446200D2C2EA /* RBTJoinLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C31D211AF4446200D2C2EA /* RBTJoinLeftViewController.m */; };
-		30C31D241AF4446200D2C2EA /* RBTJoinLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C31D221AF4446200D2C2EA /* RBTJoinLeftViewController.xib */; };
 		30C31D271AF4449100D2C2EA /* NSMutableArray+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C31D261AF4449100D2C2EA /* NSMutableArray+RBT.m */; };
-		30C31D2A1AF4542300D2C2EA /* RBTJoinLeftUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C31D291AF4542300D2C2EA /* RBTJoinLeftUserView.m */; };
-		30C31D2C1AF4543B00D2C2EA /* RBTJoinLeftUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C31D2B1AF4543B00D2C2EA /* RBTJoinLeftUserView.xib */; };
-		30C3594F1AC23F1A00A2997A /* RBTSessionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3594E1AC23F1A00A2997A /* RBTSessionHelper.m */; };
 		30CC2D711AC37D2F00F1B188 /* RBTFriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CC2D6F1AC37D2F00F1B188 /* RBTFriendListViewController.m */; };
 		30CC2D721AC37D2F00F1B188 /* RBTFriendListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D701AC37D2F00F1B188 /* RBTFriendListViewController.xib */; };
 		30CC2D761AC3845000F1B188 /* RBTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CC2D751AC3845000F1B188 /* RBTTheme.m */; };
@@ -83,8 +86,6 @@
 		30D2E20F1AEC0B6000125B00 /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E20E1AEC0B6000125B00 /* libiconv.2.4.0.dylib */; };
 		30D2E2111AEC0B6900125B00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E2101AEC0B6900125B00 /* libz.dylib */; };
 		30D2E4331AED080100125B00 /* UIAlertView+RBTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2E4321AED080100125B00 /* UIAlertView+RBTAlertView.m */; };
-		30E66C541AC5B96900EBF1B5 /* RBTNavigationBarTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E66C531AC5B96900EBF1B5 /* RBTNavigationBarTitleView.m */; };
-		30E66C591AC5CB3E00EBF1B5 /* RBTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 30E66C581AC5CB3E00EBF1B5 /* RBTSearchBar.m */; };
 		30F3D8801ABCFD730081AC89 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F3D87F1ABCFD730081AC89 /* Security.framework */; };
 		30F3D8871ABD03290081AC89 /* RBTApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F3D8861ABD03290081AC89 /* RBTApi.m */; };
 		30F3D8981ABD10270081AC89 /* NSDictionary+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F3D8971ABD10270081AC89 /* NSDictionary+RBT.m */; };
@@ -103,7 +104,6 @@
 		30FD3FE21AD07D65009CDD53 /* RBTPreLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD3FE11AD07D65009CDD53 /* RBTPreLiveViewController.m */; };
 		30FD3FE41AD07D9B009CDD53 /* RBTPreLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30FD3FE31AD07D9B009CDD53 /* RBTPreLiveViewController.xib */; };
 		30FD3FE61AD0BF4A009CDD53 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD3FE51AD0BF4A009CDD53 /* AVFoundation.framework */; };
-		30FD3FE91AD0DA94009CDD53 /* RBTAVCamHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD3FE81AD0DA94009CDD53 /* RBTAVCamHelper.m */; };
 		FF0777FD1817C185C49ECCEB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD6575A9898E134A7885376 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -122,19 +122,52 @@
 		302E07121ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTAFNetworkingClientManager.m; sourceTree = "<group>"; };
 		302FF1731B210C94007980C8 /* NSString+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RBT.h"; sourceTree = "<group>"; };
 		302FF1741B210C94007980C8 /* NSString+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RBT.m"; sourceTree = "<group>"; };
-		30414ED31B1A768F0034F449 /* RBTServerSentEventHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTServerSentEventHelper.h; sourceTree = "<group>"; };
-		30414ED41B1A768F0034F449 /* RBTServerSentEventHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTServerSentEventHelper.m; sourceTree = "<group>"; };
+		304680281BA8E1EE0023426D /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainWrapper.h; path = Helpers/KeychainWrapper.h; sourceTree = "<group>"; };
+		304680291BA8E1EE0023426D /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainWrapper.m; path = Helpers/KeychainWrapper.m; sourceTree = "<group>"; };
+		3046802A1BA8E1EE0023426D /* RBTAVCamHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTAVCamHelper.h; path = Helpers/RBTAVCamHelper.h; sourceTree = "<group>"; };
+		3046802B1BA8E1EE0023426D /* RBTAVCamHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTAVCamHelper.m; path = Helpers/RBTAVCamHelper.m; sourceTree = "<group>"; };
+		3046802C1BA8E1EE0023426D /* RBTServerSentEventHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTServerSentEventHelper.h; path = Helpers/RBTServerSentEventHelper.h; sourceTree = "<group>"; };
+		3046802D1BA8E1EE0023426D /* RBTServerSentEventHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTServerSentEventHelper.m; path = Helpers/RBTServerSentEventHelper.m; sourceTree = "<group>"; };
+		3046802E1BA8E1EE0023426D /* RBTSessionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTSessionHelper.h; path = Helpers/RBTSessionHelper.h; sourceTree = "<group>"; };
+		3046802F1BA8E1EE0023426D /* RBTSessionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTSessionHelper.m; path = Helpers/RBTSessionHelper.m; sourceTree = "<group>"; };
+		304680361BA8E20C0023426D /* RBTCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTCollectionViewCell.h; path = Views/RBTCollectionViewCell.h; sourceTree = "<group>"; };
+		304680371BA8E20C0023426D /* RBTCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTCollectionViewCell.m; path = Views/RBTCollectionViewCell.m; sourceTree = "<group>"; };
+		304680381BA8E20C0023426D /* RBTLiveInformationsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTLiveInformationsView.h; path = Views/RBTLiveInformationsView.h; sourceTree = "<group>"; };
+		304680391BA8E20C0023426D /* RBTLiveInformationsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTLiveInformationsView.m; path = Views/RBTLiveInformationsView.m; sourceTree = "<group>"; };
+		3046803A1BA8E20C0023426D /* RBTLiveInformationsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTLiveInformationsView.xib; path = Views/RBTLiveInformationsView.xib; sourceTree = "<group>"; };
+		3046803B1BA8E20C0023426D /* RBTNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTNavigationBar.h; path = Views/RBTNavigationBar.h; sourceTree = "<group>"; };
+		3046803C1BA8E20C0023426D /* RBTNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTNavigationBar.m; path = Views/RBTNavigationBar.m; sourceTree = "<group>"; };
+		3046803D1BA8E20C0023426D /* RBTNavigationBarTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTNavigationBarTitleView.h; path = Views/RBTNavigationBarTitleView.h; sourceTree = "<group>"; };
+		3046803E1BA8E20C0023426D /* RBTNavigationBarTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTNavigationBarTitleView.m; path = Views/RBTNavigationBarTitleView.m; sourceTree = "<group>"; };
+		3046803F1BA8E20C0023426D /* RBTSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTSearchBar.h; path = Views/RBTSearchBar.h; sourceTree = "<group>"; };
+		304680401BA8E20C0023426D /* RBTSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTSearchBar.m; path = Views/RBTSearchBar.m; sourceTree = "<group>"; };
+		304680411BA8E20C0023426D /* RBTSearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTSearchBar.xib; path = Views/RBTSearchBar.xib; sourceTree = "<group>"; };
+		304680421BA8E20C0023426D /* RBTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTTableViewCell.h; path = Views/RBTTableViewCell.h; sourceTree = "<group>"; };
+		304680431BA8E20C0023426D /* RBTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTTableViewCell.m; path = Views/RBTTableViewCell.m; sourceTree = "<group>"; };
+		304680441BA8E20C0023426D /* RBTTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTTextField.h; path = Views/RBTTextField.h; sourceTree = "<group>"; };
+		304680451BA8E20C0023426D /* RBTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTTextField.m; path = Views/RBTTextField.m; sourceTree = "<group>"; };
+		304680511BA8E24B0023426D /* RBTJoinLeftInformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTJoinLeftInformations.h; path = Views/JoinLeftComponents/RBTJoinLeftInformations.h; sourceTree = "<group>"; };
+		304680521BA8E24B0023426D /* RBTJoinLeftInformations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTJoinLeftInformations.m; path = Views/JoinLeftComponents/RBTJoinLeftInformations.m; sourceTree = "<group>"; };
+		304680551BA8E2600023426D /* RBTJoinLeftUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTJoinLeftUserView.h; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftUserView.h; sourceTree = "<group>"; };
+		304680561BA8E2600023426D /* RBTJoinLeftUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTJoinLeftUserView.m; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftUserView.m; sourceTree = "<group>"; };
+		304680571BA8E2600023426D /* RBTJoinLeftUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTJoinLeftUserView.xib; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftUserView.xib; sourceTree = "<group>"; };
+		304680581BA8E2600023426D /* RBTJoinLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTJoinLeftViewController.h; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftViewController.h; sourceTree = "<group>"; };
+		304680591BA8E2600023426D /* RBTJoinLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTJoinLeftViewController.m; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftViewController.m; sourceTree = "<group>"; };
+		3046805A1BA8E2600023426D /* RBTJoinLeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTJoinLeftViewController.xib; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftViewController.xib; sourceTree = "<group>"; };
+		304680601BA8E2790023426D /* RBTCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTCollectionViewLayout.h; path = Views/JoinLeftComponents/ViewersCollection/RBTCollectionViewLayout.h; sourceTree = "<group>"; };
+		304680611BA8E2790023426D /* RBTCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTCollectionViewLayout.m; path = Views/JoinLeftComponents/ViewersCollection/RBTCollectionViewLayout.m; sourceTree = "<group>"; };
+		304680621BA8E2790023426D /* RBTFriendViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTFriendViewCell.h; path = Views/JoinLeftComponents/ViewersCollection/RBTFriendViewCell.h; sourceTree = "<group>"; };
+		304680631BA8E2790023426D /* RBTFriendViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTFriendViewCell.m; path = Views/JoinLeftComponents/ViewersCollection/RBTFriendViewCell.m; sourceTree = "<group>"; };
+		304680641BA8E2790023426D /* RBTFriendViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTFriendViewCell.xib; path = Views/JoinLeftComponents/ViewersCollection/RBTFriendViewCell.xib; sourceTree = "<group>"; };
+		304680651BA8E2790023426D /* RBTViewersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTViewersViewController.h; path = Views/JoinLeftComponents/ViewersCollection/RBTViewersViewController.h; sourceTree = "<group>"; };
+		304680661BA8E2790023426D /* RBTViewersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTViewersViewController.m; path = Views/JoinLeftComponents/ViewersCollection/RBTViewersViewController.m; sourceTree = "<group>"; };
+		304680671BA8E2790023426D /* RBTViewersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTViewersViewController.xib; path = Views/JoinLeftComponents/ViewersCollection/RBTViewersViewController.xib; sourceTree = "<group>"; };
 		304F5DC31AEB02C700517C7D /* RBTFriendsInviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendsInviteViewController.h; sourceTree = "<group>"; };
 		304F5DC41AEB02C700517C7D /* RBTFriendsInviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendsInviteViewController.m; sourceTree = "<group>"; };
 		304F5DC51AEB02C700517C7D /* RBTFriendsInviteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTFriendsInviteViewController.xib; sourceTree = "<group>"; };
 		304F5DC81AEB370100517C7D /* RBTAddAllFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTAddAllFriendsCell.h; sourceTree = "<group>"; };
 		304F5DC91AEB370100517C7D /* RBTAddAllFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTAddAllFriendsCell.m; sourceTree = "<group>"; };
 		304F5DCB1AEB374400517C7D /* RBTAddAllFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTAddAllFriendsCell.xib; sourceTree = "<group>"; };
-		305ED8651AF519F200FCDA2A /* RBTViewersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTViewersViewController.h; sourceTree = "<group>"; };
-		305ED8661AF519F200FCDA2A /* RBTViewersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTViewersViewController.m; sourceTree = "<group>"; };
-		305ED8671AF519F200FCDA2A /* RBTViewersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTViewersViewController.xib; sourceTree = "<group>"; };
-		3061E4721ABCF9AE00112362 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
-		3061E4731ABCF9AE00112362 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		30B57F8A1AD9AD6A00277E64 /* UIViewController+IBP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IBP.h"; sourceTree = "<group>"; };
 		30B57F8B1AD9AD6A00277E64 /* UIViewController+IBP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IBP.m"; sourceTree = "<group>"; };
 		30B57F8E1AD9B07800277E64 /* RBTPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTPlayerViewController.h; sourceTree = "<group>"; };
@@ -143,11 +176,6 @@
 		30B585591B07FB0B00136F7C /* RBTApi+Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RBTApi+Authentication.m"; sourceTree = "<group>"; };
 		30BC60451AC8606C00A055D5 /* RBTFriendListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendListHeaderView.h; sourceTree = "<group>"; };
 		30BC60461AC8606C00A055D5 /* RBTFriendListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendListHeaderView.m; sourceTree = "<group>"; };
-		30BC604D1AC8729200A055D5 /* RBTSearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTSearchBar.xib; sourceTree = "<group>"; };
-		30BC604F1AC8792A00A055D5 /* RBTTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTTextField.h; sourceTree = "<group>"; };
-		30BC60501AC8792A00A055D5 /* RBTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTTextField.m; sourceTree = "<group>"; };
-		30BC60521AC87B6C00A055D5 /* RBTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTTableViewCell.h; sourceTree = "<group>"; };
-		30BC60531AC87B6C00A055D5 /* RBTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTTableViewCell.m; sourceTree = "<group>"; };
 		30BC60551AC87BBD00A055D5 /* RBTFriendListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendListCell.h; sourceTree = "<group>"; };
 		30BC60561AC87BBD00A055D5 /* RBTFriendListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendListCell.m; sourceTree = "<group>"; };
 		30BC60581AC87BD300A055D5 /* RBTFriendListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTFriendListCell.xib; sourceTree = "<group>"; };
@@ -157,8 +185,6 @@
 		30BD7C971B3F279F0057CC31 /* RBTLocalStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTLocalStorageManager.m; sourceTree = "<group>"; };
 		30BD7C991B3F85B70057CC31 /* RBTDataEncryptionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTDataEncryptionManager.h; sourceTree = "<group>"; };
 		30BD7C9A1B3F85B70057CC31 /* RBTDataEncryptionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTDataEncryptionManager.m; sourceTree = "<group>"; };
-		30BE699A1AFAB9C200F7D5F4 /* RBTJoinLeftInformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTJoinLeftInformations.h; path = ../Generic/JoinLeftComponents/RBTJoinLeftInformations.h; sourceTree = "<group>"; };
-		30BE699B1AFAB9C200F7D5F4 /* RBTJoinLeftInformations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTJoinLeftInformations.m; path = ../Generic/JoinLeftComponents/RBTJoinLeftInformations.m; sourceTree = "<group>"; };
 		30BFC2661AF18AAB00A33959 /* RBTHomeAndStreamingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTHomeAndStreamingViewController.h; sourceTree = "<group>"; };
 		30BFC2671AF18AAB00A33959 /* RBTHomeAndStreamingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTHomeAndStreamingViewController.m; sourceTree = "<group>"; };
 		30BFC2691AF18AB900A33959 /* RBTHomeAndStreamingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTHomeAndStreamingViewController.xib; sourceTree = "<group>"; };
@@ -167,39 +193,19 @@
 		30C0D8A81AD2232F003D5576 /* RBTApi+Friends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RBTApi+Friends.h"; sourceTree = "<group>"; };
 		30C0D8A91AD2232F003D5576 /* RBTApi+Friends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RBTApi+Friends.m"; sourceTree = "<group>"; };
 		30C1244F1ADF0064009C53D8 /* RBTPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTPlayerViewController.xib; sourceTree = "<group>"; };
-		30C124511ADF3879009C53D8 /* RBTLiveInformationsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTLiveInformationsView.h; sourceTree = "<group>"; };
-		30C124521ADF3879009C53D8 /* RBTLiveInformationsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTLiveInformationsView.m; sourceTree = "<group>"; };
-		30C124541ADF388F009C53D8 /* RBTLiveInformationsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTLiveInformationsView.xib; sourceTree = "<group>"; };
 		30C24EFE1AC0E1D000CA068D /* RBTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTLoginViewController.h; sourceTree = "<group>"; };
 		30C24EFF1AC0E1D000CA068D /* RBTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTLoginViewController.m; sourceTree = "<group>"; };
 		30C24F001AC0E1D000CA068D /* RBTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTLoginViewController.xib; sourceTree = "<group>"; };
 		30C24F221AC0EB3300CA068D /* UINavigationController+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RBT.h"; sourceTree = "<group>"; };
 		30C24F231AC0EB3300CA068D /* UINavigationController+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RBT.m"; sourceTree = "<group>"; };
-		30C24F281AC0EC5000CA068D /* RBTNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTNavigationBar.h; sourceTree = "<group>"; };
-		30C24F291AC0EC5000CA068D /* RBTNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTNavigationBar.m; sourceTree = "<group>"; };
 		30C24F2B1AC0ECFA00CA068D /* UIImage+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RBT.h"; sourceTree = "<group>"; };
 		30C24F2C1AC0ECFB00CA068D /* UIImage+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RBT.m"; sourceTree = "<group>"; };
 		30C24F341AC0EFF300CA068D /* RBTFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriend.h; sourceTree = "<group>"; };
 		30C24F351AC0EFF300CA068D /* RBTFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriend.m; sourceTree = "<group>"; };
 		30C24F371AC0EFF400CA068D /* RBTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTUser.h; sourceTree = "<group>"; };
 		30C24F381AC0EFF400CA068D /* RBTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTUser.m; sourceTree = "<group>"; };
-		30C261F71AF6A7920035CDA0 /* RBTFriendViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendViewCell.h; sourceTree = "<group>"; };
-		30C261F81AF6A7920035CDA0 /* RBTFriendViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendViewCell.m; sourceTree = "<group>"; };
-		30C261F91AF6A7920035CDA0 /* RBTFriendViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTFriendViewCell.xib; sourceTree = "<group>"; };
-		30C261FC1AF6A7C70035CDA0 /* RBTCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTCollectionViewCell.h; sourceTree = "<group>"; };
-		30C261FD1AF6A7C70035CDA0 /* RBTCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTCollectionViewCell.m; sourceTree = "<group>"; };
-		30C262021AF6DDDC0035CDA0 /* RBTCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTCollectionViewLayout.h; sourceTree = "<group>"; };
-		30C262031AF6DDDC0035CDA0 /* RBTCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTCollectionViewLayout.m; sourceTree = "<group>"; };
-		30C31D201AF4446100D2C2EA /* RBTJoinLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTJoinLeftViewController.h; sourceTree = "<group>"; };
-		30C31D211AF4446200D2C2EA /* RBTJoinLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTJoinLeftViewController.m; sourceTree = "<group>"; };
-		30C31D221AF4446200D2C2EA /* RBTJoinLeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTJoinLeftViewController.xib; sourceTree = "<group>"; };
 		30C31D251AF4449100D2C2EA /* NSMutableArray+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+RBT.h"; sourceTree = "<group>"; };
 		30C31D261AF4449100D2C2EA /* NSMutableArray+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+RBT.m"; sourceTree = "<group>"; };
-		30C31D281AF4542300D2C2EA /* RBTJoinLeftUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTJoinLeftUserView.h; sourceTree = "<group>"; };
-		30C31D291AF4542300D2C2EA /* RBTJoinLeftUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTJoinLeftUserView.m; sourceTree = "<group>"; };
-		30C31D2B1AF4543B00D2C2EA /* RBTJoinLeftUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTJoinLeftUserView.xib; sourceTree = "<group>"; };
-		30C3594D1AC23F1A00A2997A /* RBTSessionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTSessionHelper.h; sourceTree = "<group>"; };
-		30C3594E1AC23F1A00A2997A /* RBTSessionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTSessionHelper.m; sourceTree = "<group>"; };
 		30CC2D6E1AC37D2F00F1B188 /* RBTFriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendListViewController.h; sourceTree = "<group>"; };
 		30CC2D6F1AC37D2F00F1B188 /* RBTFriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendListViewController.m; sourceTree = "<group>"; };
 		30CC2D701AC37D2F00F1B188 /* RBTFriendListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTFriendListViewController.xib; sourceTree = "<group>"; };
@@ -234,10 +240,6 @@
 		30D2E2101AEC0B6900125B00 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		30D2E4311AED080100125B00 /* UIAlertView+RBTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+RBTAlertView.h"; sourceTree = "<group>"; };
 		30D2E4321AED080100125B00 /* UIAlertView+RBTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+RBTAlertView.m"; sourceTree = "<group>"; };
-		30E66C521AC5B96900EBF1B5 /* RBTNavigationBarTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTNavigationBarTitleView.h; sourceTree = "<group>"; };
-		30E66C531AC5B96900EBF1B5 /* RBTNavigationBarTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTNavigationBarTitleView.m; sourceTree = "<group>"; };
-		30E66C571AC5CB3E00EBF1B5 /* RBTSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTSearchBar.h; sourceTree = "<group>"; };
-		30E66C581AC5CB3E00EBF1B5 /* RBTSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTSearchBar.m; sourceTree = "<group>"; };
 		30F3D87F1ABCFD730081AC89 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		30F3D8851ABD03290081AC89 /* RBTApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTApi.h; sourceTree = "<group>"; };
 		30F3D8861ABD03290081AC89 /* RBTApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTApi.m; sourceTree = "<group>"; };
@@ -272,8 +274,6 @@
 		30FD3FE11AD07D65009CDD53 /* RBTPreLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTPreLiveViewController.m; sourceTree = "<group>"; };
 		30FD3FE31AD07D9B009CDD53 /* RBTPreLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTPreLiveViewController.xib; sourceTree = "<group>"; };
 		30FD3FE51AD0BF4A009CDD53 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		30FD3FE71AD0DA94009CDD53 /* RBTAVCamHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTAVCamHelper.h; sourceTree = "<group>"; };
-		30FD3FE81AD0DA94009CDD53 /* RBTAVCamHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTAVCamHelper.m; sourceTree = "<group>"; };
 		5754B19B1376ABEDE201274F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C77E831F02952C484A761A2F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CFD6575A9898E134A7885376 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -310,6 +310,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		304680271BA8E1C30023426D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				304680281BA8E1EE0023426D /* KeychainWrapper.h */,
+				304680291BA8E1EE0023426D /* KeychainWrapper.m */,
+				3046802A1BA8E1EE0023426D /* RBTAVCamHelper.h */,
+				3046802B1BA8E1EE0023426D /* RBTAVCamHelper.m */,
+				3046802C1BA8E1EE0023426D /* RBTServerSentEventHelper.h */,
+				3046802D1BA8E1EE0023426D /* RBTServerSentEventHelper.m */,
+				3046802E1BA8E1EE0023426D /* RBTSessionHelper.h */,
+				3046802F1BA8E1EE0023426D /* RBTSessionHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		304680341BA8E1FC0023426D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				304680501BA8E2400023426D /* JoinLeftComponents */,
+				304680361BA8E20C0023426D /* RBTCollectionViewCell.h */,
+				304680371BA8E20C0023426D /* RBTCollectionViewCell.m */,
+				304680381BA8E20C0023426D /* RBTLiveInformationsView.h */,
+				304680391BA8E20C0023426D /* RBTLiveInformationsView.m */,
+				3046803A1BA8E20C0023426D /* RBTLiveInformationsView.xib */,
+				3046803B1BA8E20C0023426D /* RBTNavigationBar.h */,
+				3046803C1BA8E20C0023426D /* RBTNavigationBar.m */,
+				3046803D1BA8E20C0023426D /* RBTNavigationBarTitleView.h */,
+				3046803E1BA8E20C0023426D /* RBTNavigationBarTitleView.m */,
+				3046803F1BA8E20C0023426D /* RBTSearchBar.h */,
+				304680401BA8E20C0023426D /* RBTSearchBar.m */,
+				304680411BA8E20C0023426D /* RBTSearchBar.xib */,
+				304680421BA8E20C0023426D /* RBTTableViewCell.h */,
+				304680431BA8E20C0023426D /* RBTTableViewCell.m */,
+				304680441BA8E20C0023426D /* RBTTextField.h */,
+				304680451BA8E20C0023426D /* RBTTextField.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		304680501BA8E2400023426D /* JoinLeftComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3046805F1BA8E26C0023426D /* ViewersCollection */,
+				304680541BA8E24F0023426D /* FadingPopup */,
+				304680511BA8E24B0023426D /* RBTJoinLeftInformations.h */,
+				304680521BA8E24B0023426D /* RBTJoinLeftInformations.m */,
+			);
+			name = JoinLeftComponents;
+			sourceTree = "<group>";
+		};
+		304680541BA8E24F0023426D /* FadingPopup */ = {
+			isa = PBXGroup;
+			children = (
+				304680551BA8E2600023426D /* RBTJoinLeftUserView.h */,
+				304680561BA8E2600023426D /* RBTJoinLeftUserView.m */,
+				304680571BA8E2600023426D /* RBTJoinLeftUserView.xib */,
+				304680581BA8E2600023426D /* RBTJoinLeftViewController.h */,
+				304680591BA8E2600023426D /* RBTJoinLeftViewController.m */,
+				3046805A1BA8E2600023426D /* RBTJoinLeftViewController.xib */,
+			);
+			name = FadingPopup;
+			sourceTree = "<group>";
+		};
+		3046805F1BA8E26C0023426D /* ViewersCollection */ = {
+			isa = PBXGroup;
+			children = (
+				304680601BA8E2790023426D /* RBTCollectionViewLayout.h */,
+				304680611BA8E2790023426D /* RBTCollectionViewLayout.m */,
+				304680621BA8E2790023426D /* RBTFriendViewCell.h */,
+				304680631BA8E2790023426D /* RBTFriendViewCell.m */,
+				304680641BA8E2790023426D /* RBTFriendViewCell.xib */,
+				304680651BA8E2790023426D /* RBTViewersViewController.h */,
+				304680661BA8E2790023426D /* RBTViewersViewController.m */,
+				304680671BA8E2790023426D /* RBTViewersViewController.xib */,
+			);
+			name = ViewersCollection;
+			sourceTree = "<group>";
+		};
 		304F5DC21AEB029600517C7D /* LiveSetup */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,58 +399,6 @@
 				304F5DCB1AEB374400517C7D /* RBTAddAllFriendsCell.xib */,
 			);
 			path = LiveSetup;
-			sourceTree = "<group>";
-		};
-		305ED8621AF5195500FCDA2A /* JoinLeftComponents */ = {
-			isa = PBXGroup;
-			children = (
-				305ED8641AF519BA00FCDA2A /* ViewersCollection */,
-				305ED8631AF519A700FCDA2A /* FadingPopup */,
-			);
-			path = JoinLeftComponents;
-			sourceTree = "<group>";
-		};
-		305ED8631AF519A700FCDA2A /* FadingPopup */ = {
-			isa = PBXGroup;
-			children = (
-				30C31D201AF4446100D2C2EA /* RBTJoinLeftViewController.h */,
-				30C31D211AF4446200D2C2EA /* RBTJoinLeftViewController.m */,
-				30C31D221AF4446200D2C2EA /* RBTJoinLeftViewController.xib */,
-				30C31D281AF4542300D2C2EA /* RBTJoinLeftUserView.h */,
-				30C31D291AF4542300D2C2EA /* RBTJoinLeftUserView.m */,
-				30C31D2B1AF4543B00D2C2EA /* RBTJoinLeftUserView.xib */,
-			);
-			path = FadingPopup;
-			sourceTree = "<group>";
-		};
-		305ED8641AF519BA00FCDA2A /* ViewersCollection */ = {
-			isa = PBXGroup;
-			children = (
-				305ED8651AF519F200FCDA2A /* RBTViewersViewController.h */,
-				305ED8661AF519F200FCDA2A /* RBTViewersViewController.m */,
-				305ED8671AF519F200FCDA2A /* RBTViewersViewController.xib */,
-				30C261F71AF6A7920035CDA0 /* RBTFriendViewCell.h */,
-				30C261F81AF6A7920035CDA0 /* RBTFriendViewCell.m */,
-				30C261F91AF6A7920035CDA0 /* RBTFriendViewCell.xib */,
-				30C262021AF6DDDC0035CDA0 /* RBTCollectionViewLayout.h */,
-				30C262031AF6DDDC0035CDA0 /* RBTCollectionViewLayout.m */,
-			);
-			path = ViewersCollection;
-			sourceTree = "<group>";
-		};
-		3061E4711ABCF98A00112362 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				3061E4721ABCF9AE00112362 /* KeychainWrapper.h */,
-				3061E4731ABCF9AE00112362 /* KeychainWrapper.m */,
-				30C3594D1AC23F1A00A2997A /* RBTSessionHelper.h */,
-				30C3594E1AC23F1A00A2997A /* RBTSessionHelper.m */,
-				30FD3FE71AD0DA94009CDD53 /* RBTAVCamHelper.h */,
-				30FD3FE81AD0DA94009CDD53 /* RBTAVCamHelper.m */,
-				30414ED31B1A768F0034F449 /* RBTServerSentEventHelper.h */,
-				30414ED41B1A768F0034F449 /* RBTServerSentEventHelper.m */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		30B57F8D1AD9B02C00277E64 /* Player */ = {
@@ -418,29 +444,6 @@
 				30C24F001AC0E1D000CA068D /* RBTLoginViewController.xib */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		30C24F271AC0EC3700CA068D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				30C24F281AC0EC5000CA068D /* RBTNavigationBar.h */,
-				30C24F291AC0EC5000CA068D /* RBTNavigationBar.m */,
-				30E66C521AC5B96900EBF1B5 /* RBTNavigationBarTitleView.h */,
-				30E66C531AC5B96900EBF1B5 /* RBTNavigationBarTitleView.m */,
-				30E66C571AC5CB3E00EBF1B5 /* RBTSearchBar.h */,
-				30E66C581AC5CB3E00EBF1B5 /* RBTSearchBar.m */,
-				30BC604D1AC8729200A055D5 /* RBTSearchBar.xib */,
-				30BC604F1AC8792A00A055D5 /* RBTTextField.h */,
-				30BC60501AC8792A00A055D5 /* RBTTextField.m */,
-				30BC60521AC87B6C00A055D5 /* RBTTableViewCell.h */,
-				30BC60531AC87B6C00A055D5 /* RBTTableViewCell.m */,
-				30C261FC1AF6A7C70035CDA0 /* RBTCollectionViewCell.h */,
-				30C261FD1AF6A7C70035CDA0 /* RBTCollectionViewCell.m */,
-				30C124511ADF3879009C53D8 /* RBTLiveInformationsView.h */,
-				30C124521ADF3879009C53D8 /* RBTLiveInformationsView.m */,
-				30C124541ADF388F009C53D8 /* RBTLiveInformationsView.xib */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		30CC2D6D1AC37CBD00F1B188 /* FriendList */ = {
@@ -517,8 +520,6 @@
 				30C24F381AC0EFF400CA068D /* RBTUser.m */,
 				30C24F341AC0EFF300CA068D /* RBTFriend.h */,
 				30C24F351AC0EFF300CA068D /* RBTFriend.m */,
-				30BE699A1AFAB9C200F7D5F4 /* RBTJoinLeftInformations.h */,
-				30BE699B1AFAB9C200F7D5F4 /* RBTJoinLeftInformations.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -648,6 +649,8 @@
 		30F4D8181ABA505F003622E9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				304680341BA8E1FC0023426D /* Views */,
+				304680271BA8E1C30023426D /* Helpers */,
 				30BD7C951B3F240D0057CC31 /* Service */,
 				30F3D8841ABD03180081AC89 /* WebService */,
 				30F4AC611ABCEE7D00C6AFC1 /* Model */,
@@ -659,11 +662,8 @@
 		30F4D8191ABA506B003622E9 /* Generic */ = {
 			isa = PBXGroup;
 			children = (
-				305ED8621AF5195500FCDA2A /* JoinLeftComponents */,
 				30CC2D731AC3843500F1B188 /* Themes */,
-				30C24F271AC0EC3700CA068D /* Views */,
 				30F3D8A01ABD115B0081AC89 /* Protocols */,
-				3061E4711ABCF98A00112362 /* Helpers */,
 				30F4D81E1ABA5586003622E9 /* Categories */,
 				30F4D81A1ABA50B9003622E9 /* ViewController */,
 			);
@@ -838,17 +838,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30C31D2C1AF4543B00D2C2EA /* RBTJoinLeftUserView.xib in Resources */,
+				3046805C1BA8E2600023426D /* RBTJoinLeftUserView.xib in Resources */,
 				30CC2D891AC38F9B00F1B188 /* SourceSansPro-BoldIt.otf in Resources */,
 				30F4AC691ABCF49A00C6AFC1 /* Images.xcassets in Resources */,
-				30C124551ADF388F009C53D8 /* RBTLiveInformationsView.xib in Resources */,
 				30CC2D901AC38F9B00F1B188 /* SourceSansPro-Semibold.otf in Resources */,
 				30D2E1441AEBC6CF00125B00 /* loginBackground@2x.jpeg in Resources */,
 				30F4D82D1ABA57F2003622E9 /* RBTLaunchScreenViewController.xib in Resources */,
-				305ED8691AF519F200FCDA2A /* RBTViewersViewController.xib in Resources */,
 				30CC2D871AC38F9B00F1B188 /* SourceSansPro-BlackIt.otf in Resources */,
 				30CC2D721AC37D2F00F1B188 /* RBTFriendListViewController.xib in Resources */,
-				30C31D241AF4446200D2C2EA /* RBTJoinLeftViewController.xib in Resources */,
 				30CC2D911AC38F9B00F1B188 /* SourceSansPro-SemiboldIt.otf in Resources */,
 				30CC2D881AC38F9B00F1B188 /* SourceSansPro-Bold.otf in Resources */,
 				30CC2D8B1AC38F9B00F1B188 /* SourceSansPro-ExtraLightIt.otf in Resources */,
@@ -857,15 +854,18 @@
 				30CC2D861AC38F9B00F1B188 /* SourceSansPro-Black.otf in Resources */,
 				30CC2D8C1AC38F9B00F1B188 /* SourceSansPro-It.otf in Resources */,
 				304F5DC71AEB02C700517C7D /* RBTFriendsInviteViewController.xib in Resources */,
-				30BC604E1AC8729200A055D5 /* RBTSearchBar.xib in Resources */,
 				30F4D7FA1ABA4470003622E9 /* LaunchScreen.xib in Resources */,
 				30C24F021AC0E1D000CA068D /* RBTLoginViewController.xib in Resources */,
 				30CC2D8A1AC38F9B00F1B188 /* SourceSansPro-ExtraLight.otf in Resources */,
+				304680491BA8E20C0023426D /* RBTLiveInformationsView.xib in Resources */,
 				30BC60591AC87BD300A055D5 /* RBTFriendListCell.xib in Resources */,
-				30C261FB1AF6A7920035CDA0 /* RBTFriendViewCell.xib in Resources */,
+				3046805E1BA8E2600023426D /* RBTJoinLeftViewController.xib in Resources */,
 				30CC2D8F1AC38F9B00F1B188 /* SourceSansPro-Regular.otf in Resources */,
+				3046806A1BA8E2790023426D /* RBTFriendViewCell.xib in Resources */,
+				3046806C1BA8E2790023426D /* RBTViewersViewController.xib in Resources */,
 				30C124501ADF0064009C53D8 /* RBTPlayerViewController.xib in Resources */,
 				304F5DCC1AEB374400517C7D /* RBTAddAllFriendsCell.xib in Resources */,
+				3046804D1BA8E20C0023426D /* RBTSearchBar.xib in Resources */,
 				30BFC26A1AF18AB900A33959 /* RBTHomeAndStreamingViewController.xib in Resources */,
 				30D2E14A1AEC067F00125B00 /* RBTStreamingViewController.xib in Resources */,
 				30CC2D8D1AC38F9B00F1B188 /* SourceSansPro-Light.otf in Resources */,
@@ -919,58 +919,58 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30FD3FE91AD0DA94009CDD53 /* RBTAVCamHelper.m in Sources */,
+				3046805D1BA8E2600023426D /* RBTJoinLeftViewController.m in Sources */,
+				3046805B1BA8E2600023426D /* RBTJoinLeftUserView.m in Sources */,
+				3046804A1BA8E20C0023426D /* RBTNavigationBar.m in Sources */,
 				30C0D8AA1AD2232F003D5576 /* RBTApi+Friends.m in Sources */,
+				304680331BA8E1EE0023426D /* RBTSessionHelper.m in Sources */,
+				304680691BA8E2790023426D /* RBTFriendViewCell.m in Sources */,
+				304680301BA8E1EE0023426D /* KeychainWrapper.m in Sources */,
 				30F4AC671ABCF3C900C6AFC1 /* RBTWSUrlConstants.m in Sources */,
+				304680471BA8E20C0023426D /* RBTCollectionViewCell.m in Sources */,
 				30D2E4331AED080100125B00 /* UIAlertView+RBTAlertView.m in Sources */,
+				304680681BA8E2790023426D /* RBTCollectionViewLayout.m in Sources */,
 				30CC2D791AC384A000F1B188 /* UIColor+RBT.m in Sources */,
-				30C3594F1AC23F1A00A2997A /* RBTSessionHelper.m in Sources */,
+				3046806B1BA8E2790023426D /* RBTViewersViewController.m in Sources */,
+				3046804B1BA8E20C0023426D /* RBTNavigationBarTitleView.m in Sources */,
+				304680311BA8E1EE0023426D /* RBTAVCamHelper.m in Sources */,
 				30B57F8C1AD9AD6A00277E64 /* UIViewController+IBP.m in Sources */,
 				304F5DC61AEB02C700517C7D /* RBTFriendsInviteViewController.m in Sources */,
-				30C261FA1AF6A7920035CDA0 /* RBTFriendViewCell.m in Sources */,
-				3061E4741ABCF9AE00112362 /* KeychainWrapper.m in Sources */,
+				3046804E1BA8E20C0023426D /* RBTTableViewCell.m in Sources */,
+				304680481BA8E20C0023426D /* RBTLiveInformationsView.m in Sources */,
 				30C31D271AF4449100D2C2EA /* NSMutableArray+RBT.m in Sources */,
-				30C124531ADF3879009C53D8 /* RBTLiveInformationsView.m in Sources */,
+				3046804F1BA8E20C0023426D /* RBTTextField.m in Sources */,
 				30F4D7F21ABA4470003622E9 /* RBTViewController.m in Sources */,
 				302E07131ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.m in Sources */,
 				30FD3FE21AD07D65009CDD53 /* RBTPreLiveViewController.m in Sources */,
-				30414ED51B1A768F0034F449 /* RBTServerSentEventHelper.m in Sources */,
 				30F3D8871ABD03290081AC89 /* RBTApi.m in Sources */,
 				30CC2D761AC3845000F1B188 /* RBTTheme.m in Sources */,
 				30F4D7EF1ABA4470003622E9 /* RBTAppDelegate.m in Sources */,
 				30B5855A1B07FB0B00136F7C /* RBTApi+Authentication.m in Sources */,
 				30C0D8A11AD2119B003D5576 /* RBTURLBuilder.m in Sources */,
 				30BC60571AC87BBD00A055D5 /* RBTFriendListCell.m in Sources */,
-				30C31D231AF4446200D2C2EA /* RBTJoinLeftViewController.m in Sources */,
 				30C24F2D1AC0ECFB00CA068D /* UIImage+RBT.m in Sources */,
 				30FD3FDE1AD078F0009CDD53 /* UIBarButtonItem+RBT.m in Sources */,
 				30C24F391AC0EFF400CA068D /* RBTUser.m in Sources */,
-				305ED8681AF519F200FCDA2A /* RBTViewersViewController.m in Sources */,
 				304F5DCA1AEB370100517C7D /* RBTAddAllFriendsCell.m in Sources */,
 				30B57F901AD9B07800277E64 /* RBTPlayerViewController.m in Sources */,
 				30C24F011AC0E1D000CA068D /* RBTLoginViewController.m in Sources */,
-				30BC60541AC87B6C00A055D5 /* RBTTableViewCell.m in Sources */,
+				3046804C1BA8E20C0023426D /* RBTSearchBar.m in Sources */,
+				304680531BA8E24B0023426D /* RBTJoinLeftInformations.m in Sources */,
 				30BD5CAF1B3B4E880043A284 /* RBTFriendManager.m in Sources */,
 				30BC60471AC8606C00A055D5 /* RBTFriendListHeaderView.m in Sources */,
+				304680321BA8E1EE0023426D /* RBTServerSentEventHelper.m in Sources */,
 				30BFC2681AF18AAB00A33959 /* RBTHomeAndStreamingViewController.m in Sources */,
-				30C261FE1AF6A7C70035CDA0 /* RBTCollectionViewCell.m in Sources */,
-				30BC60511AC8792A00A055D5 /* RBTTextField.m in Sources */,
 				30F4D82C1ABA57F2003622E9 /* RBTLaunchScreenViewController.m in Sources */,
 				30F3D8981ABD10270081AC89 /* NSDictionary+RBT.m in Sources */,
 				30BD7C981B3F279F0057CC31 /* RBTLocalStorageManager.m in Sources */,
 				30C24F241AC0EB3300CA068D /* UINavigationController+RBT.m in Sources */,
-				30C24F2A1AC0EC5000CA068D /* RBTNavigationBar.m in Sources */,
 				30D2E1491AEC067F00125B00 /* RBTStreamingViewController.m in Sources */,
 				30F4D7EC1ABA4470003622E9 /* main.m in Sources */,
 				30CC2D711AC37D2F00F1B188 /* RBTFriendListViewController.m in Sources */,
 				30C24F361AC0EFF300CA068D /* RBTFriend.m in Sources */,
-				30E66C591AC5CB3E00EBF1B5 /* RBTSearchBar.m in Sources */,
-				30E66C541AC5B96900EBF1B5 /* RBTNavigationBarTitleView.m in Sources */,
-				30C31D2A1AF4542300D2C2EA /* RBTJoinLeftUserView.m in Sources */,
 				302FF1751B210C94007980C8 /* NSString+RBT.m in Sources */,
-				30C262041AF6DDDC0035CDA0 /* RBTCollectionViewLayout.m in Sources */,
 				30BD7C9B1B3F85B70057CC31 /* RBTDataEncryptionManager.m in Sources */,
-				30BE699C1AFAB9C200F7D5F4 /* RBTJoinLeftInformations.m in Sources */,
 				30F4D8251ABA55E4003622E9 /* UIView+RBT.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
