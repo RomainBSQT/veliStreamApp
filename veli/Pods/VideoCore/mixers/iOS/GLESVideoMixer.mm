@@ -206,8 +206,7 @@ namespace videocore { namespace iOS {
     m_pixelBufferPool(pool),
     m_paused(false),
     m_glJobQueue("com.videocore.composite"),
-    m_catchingUp(false),
-    m_epoch(std::chrono::steady_clock::now())
+    m_catchingUp(false)
     {
         PERF_GL_sync({
             
@@ -249,13 +248,9 @@ namespace videocore { namespace iOS {
             
             [(id)m_glesCtx release];
         });
-        
-        if(m_mixThread.joinable()) {
-            m_mixThread.join();
-        }
         m_glJobQueue.mark_exiting();
         m_glJobQueue.enqueue_sync([](){});
-
+        m_mixThread.join();
         
         [(id)m_callbackSession release];
     }
@@ -310,8 +305,8 @@ namespace videocore { namespace iOS {
                 CVPixelBufferCreate(kCFAllocatorDefault, m_frameW, m_frameH, kCVPixelFormatType_32BGRA, (CFDictionaryRef)pixelBufferOptions, &m_pixelBuffer[1]);
             }
             else {
-                CVPixelBufferPoolCreatePixelBuffer(kCFAllocatorDefault, m_pixelBufferPool, &m_pixelBuffer[0]);
-                CVPixelBufferPoolCreatePixelBuffer(kCFAllocatorDefault, m_pixelBufferPool, &m_pixelBuffer[1]);
+                CVReturn ret = CVPixelBufferPoolCreatePixelBuffer(kCFAllocatorDefault, m_pixelBufferPool, &m_pixelBuffer[0]);
+                ret = CVPixelBufferPoolCreatePixelBuffer(kCFAllocatorDefault, m_pixelBufferPool, &m_pixelBuffer[1]);
             }
             
         }
@@ -441,7 +436,6 @@ namespace videocore { namespace iOS {
         auto inPixelBuffer = *(Apple::PixelBufferRef*)data ;
 
         m_sourceBuffers[h].setBuffer(inPixelBuffer, this->m_textureCache, m_glJobQueue, m_glesCtx);
-        m_sourceBuffers[h].setBlends(md.getData<kVideoMetadataBlends>());
         
         auto it = std::find(this->m_layerMap[zIndex].begin(), this->m_layerMap[zIndex].end(), h);
         if(it == this->m_layerMap[zIndex].end()) {
@@ -505,7 +499,7 @@ namespace videocore { namespace iOS {
                     glBindFramebuffer(GL_FRAMEBUFFER, this->m_fbo[current_fb]);
                     
                     IVideoFilter* currentFilter = nil;
-                    glClear(GL_COLOR_BUFFER_BIT);
+                    
                     for ( int i = m_zRange.first ; i <= m_zRange.second ; ++i) {
                         
                         for ( auto it = this->m_layerMap[i].begin() ; it != this->m_layerMap[i].end() ; ++ it) {
@@ -532,10 +526,10 @@ namespace videocore { namespace iOS {
                             texture = iTex->second.currentTexture();
                             
                             // TODO: Add blending.
-                            if(iTex->second.blends()) {
-                                glEnable(GL_BLEND);
-                                glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-                            }
+                            /*if(this->m_sourceProperties[*it].blends) {
+                             glEnable(GL_BLEND);
+                             glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+                             }*/
                             if(texture && currentFilter) {
                                 currentFilter->incomingMatrix(this->m_sourceMats[*it]);
                                 currentFilter->bind();
@@ -544,9 +538,9 @@ namespace videocore { namespace iOS {
                             } else {
                                 DLog("Null texture!");
                             }
-                            if(iTex->second.blends()) {
-                                glDisable(GL_BLEND);
-                            }
+                            /*if(this->m_sourceProperties[*it].blends) {
+                             glDisable(GL_BLEND);
+                             }*/
                         }
                     }
                     glFlush();
@@ -563,6 +557,27 @@ namespace videocore { namespace iOS {
         
                 });
                 current_fb = !current_fb;
+                
+                /*auto ptsdiff = pts - m_epoch;
+                auto nowdiff = std::chrono::steady_clock::now() - m_epoch;
+                if(ptsdiff > nowdiff) {
+                    if(ptsdiff - nowdiff > std::chrono::milliseconds(200)) {
+                        m_catchingUp = true;
+                    } else if(ptsdiff - nowdiff <= std::chrono::milliseconds(50)) {
+                        m_catchingUp = false;
+                    }
+                } else if ( ptsdiff < nowdiff) {
+                    m_catchingUp = false;
+                    if (nowdiff - ptsdiff > std::chrono::milliseconds(200)) {
+                        pts = std::chrono::steady_clock::now();
+                    }
+                }
+                
+                if(!m_catchingUp) {
+                    pts += us;
+                } else {
+                    pts += std::chrono::milliseconds(1);
+                }*/
             }
             
             m_mixThreadCond.wait_until(l, m_nextMixTime);

@@ -9,6 +9,9 @@
 #import "RBTLoginViewController.h"
 #import "RBTSessionHelper.h"
 #import "RBTAppDelegate.h"
+#import "RBTAuthenticationService.h"
+#import "RBTLocalStorageManager.h"
+#import "RBTUser.h"
 
 @interface RBTLoginViewController ()
 
@@ -25,11 +28,6 @@
 	[self configureSubviews];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 - (void)configureSubviews
 {
 	self.facebookDisclaimer.textColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5f];
@@ -41,10 +39,9 @@
 
 - (IBAction)didTouchConnectionButton:(id)sender
 {
-	[[RBTSessionHelper sharedInstance] login:^(id ret) {
+	[[RBTAuthenticationService authenticateWithUsername:@"bonsoir"] subscribeNext:^(NSDictionary *responseDict) {
+		[RBTLocalStorageManager save:[RBTUser userWithDictionary:responseDict]];
 		[(RBTAppDelegate *)[[UIApplication sharedApplication] delegate] showHome];
-	} failure:^(NSError *error) {
-		
 	}];
 }
 

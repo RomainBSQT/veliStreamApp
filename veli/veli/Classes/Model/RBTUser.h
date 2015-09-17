@@ -13,14 +13,11 @@
 
 @interface RBTUser : NSObject <NSSecureCoding>
 
-@property (nonatomic, copy) NSString *acess_token;
+@property (nonatomic, copy) NSString *userToken;
 @property (nonatomic, copy) NSString *distantId;
-@property (nonatomic, strong) NSNumber *live_audience;
-@property (nonatomic, copy) NSString *live_key;
+@property (nonatomic, copy) NSString *avatarUrl;
+@property (nonatomic, copy) NSString *facebookId;
 @property (nonatomic, copy) NSString *username;
-@property (nonatomic, copy) NSString *facebook_social_id;
-@property (nonatomic, copy) NSString *facebook_oauth_token;
-@property (nonatomic, copy) NSString *picture_url;
 
 + (RBTUser *)userWithDictionary:(NSDictionary *)dictionary;
 - (void)setupWithDictionary:(NSDictionary *)dictionary;

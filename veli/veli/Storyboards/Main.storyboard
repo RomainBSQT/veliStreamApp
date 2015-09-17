@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="NNj-71-jM9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="FfV-Yx-mVv">
+            <objects>
+                <viewController id="NNj-71-jM9" customClass="RBTLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jma-4F-b4w"/>
+                        <viewControllerLayoutGuide type="bottom" id="bRx-x3-IQY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iCa-NE-EXU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="FB2-c4-vq7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzi-JM-HIK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="P9G-Zz-TT7">
+                                        <rect key="frame" x="61" y="337" width="199" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="199" id="Ajs-54-sx3"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="58" id="ZYo-4I-vlV"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ajs-54-sx3"/>
+                                                <exclude reference="ZYo-4I-vlV"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="P9G-Zz-TT7" secondAttribute="centerX" constant="-0.5" id="Imy-i6-nYb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FB2-c4-vq7" firstAttribute="top" secondItem="jma-4F-b4w" secondAttribute="bottom" id="7dS-ZC-4hq"/>
+                            <constraint firstItem="hzi-JM-HIK" firstAttribute="leading" secondItem="iCa-NE-EXU" secondAttribute="leading" id="99U-WO-hs6"/>
+                            <constraint firstItem="FB2-c4-vq7" firstAttribute="leading" secondItem="iCa-NE-EXU" secondAttribute="leading" id="Jib-Xx-8UW"/>
+                            <constraint firstAttribute="trailing" secondItem="hzi-JM-HIK" secondAttribute="trailing" id="Rjo-bS-dpY"/>
+                            <constraint firstItem="bRx-x3-IQY" firstAttribute="top" secondItem="hzi-JM-HIK" secondAttribute="bottom" id="Udz-9h-Wbe"/>
+                            <constraint firstAttribute="trailing" secondItem="FB2-c4-vq7" secondAttribute="trailing" id="hmI-zE-XiM"/>
+                            <constraint firstItem="bRx-x3-IQY" firstAttribute="bottom" secondItem="FB2-c4-vq7" secondAttribute="bottom" id="sLp-9I-l6R"/>
+                            <constraint firstItem="hzi-JM-HIK" firstAttribute="top" secondItem="jma-4F-b4w" secondAttribute="bottom" id="x3b-z2-BLN"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IjO-Ys-2p3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="265"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loginBackground.jpeg" width="681" height="680"/>
+        <image name="logo" width="199" height="58"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -14,7 +14,7 @@
 
 - (void)getFriendsWithSuccess:(RBTApiSuccess)success failure:(RBTApiFailure)failure
 {
-	NSDictionary *params = @{@"t": [RBTUser currentUser].acess_token};
+	NSDictionary *params = @{@"t": [RBTUser currentUser].userToken};
 	[self getPath:[self.urlBuilder urlWithUrlType:RBTURLTypeUsers] parameters:params success:^(NSURLSessionTask *task, id responseObject) {
 		__block NSMutableArray *friendArray = [[NSMutableArray alloc] init];
 		[responseObject enumerateObjectsUsingBlock:^(NSDictionary *dict, NSUInteger idx, BOOL *stop) {

@@ -8,10 +8,10 @@
 
 #import "RBTWSUrlConstants.h"
 
-NSString *const kBaseUrl = @"http://52.28.29.59:8080/v1";
+NSString *const kBaseUrl = @"http://lens-server.herokuapp.com/api";
 
 //-- Authentication
-NSString *const kRegisterUrl = @"/auth/register";
+NSString *const kRegisterUrl = @"/auth";
 
 NSString *const kUsersUrl = @"/users";
 NSString *const kUserUrl = @"/users/%@";

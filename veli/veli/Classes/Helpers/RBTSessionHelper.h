@@ -18,9 +18,7 @@ NS_ENUM(NSInteger, RBTAuthenticationStatus) {
 @interface RBTSessionHelper : NSObject
 
 + (RBTSessionHelper *)sharedInstance;
-
 + (BOOL)isLogged;
-- (void)login:(RBTApiSuccess)success failure:(RBTApiFailure)failure;
 
 //-- AppDelegate relays
 - (void)facebookActivateApp;

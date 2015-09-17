@@ -59,25 +59,20 @@ static CGFloat const kBackIconMargins = 18.f;
 {
 	[super viewWillAppear:animated];
 	[self.navigationController setNavigationBarHidden:YES animated:YES];
-	[self configureSSE];
+//	[self configureSSE];
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
 	[super viewDidAppear:animated];
 	[self.navigationController statusBarAnimateOut];
-//	[self connectStream];
+	[self connectStream];
 }
 
 - (void)viewDidDisappear:(BOOL)animated
 {
 	[super viewDidDisappear:animated];
 	[self.joinLeftController reset];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
 }
 
 #pragma mark - Setup
@@ -106,16 +101,16 @@ static CGFloat const kBackIconMargins = 18.f;
 
 - (void)startSSE
 {
-	@weakify(self)
-	[[self.SSEEvents onEvent:kMainEventName] subscribeNext:^(NSDictionary *eventDatas) {
-		@strongify(self)
-		[self pushUsers:eventDatas[@"events"]];
-	} error:^(NSError *error) {
-		@strongify(self)
-		if (error.code == -1001) { //-- Timeout
-			[self startSSE];
-		}
-	}];
+//	@weakify(self)
+//	[[self.SSEEvents onEvent:kMainEventName] subscribeNext:^(NSDictionary *eventDatas) {
+//		@strongify(self)
+//		[self pushUsers:eventDatas[@"events"]];
+//	} error:^(NSError *error) {
+//		@strongify(self)
+//		if (error.code == -1001) { //-- Timeout
+//			[self startSSE];
+//		}
+//	}];
 }
 
 - (void)pushUsers:(NSArray *)userArray
@@ -198,12 +193,11 @@ static CGFloat const kBackIconMargins = 18.f;
 	if ([self isSessionRunning]) {
 		return;
 	}
-	
 //	NSString *host = @"rtmp://publish.dailymotion.com/publish-dm";
 //	NSString *streamUrl = @"x1r0624?auth=1713954118_1eff03da516e2e35dc8bc72338253697";
-	NSString *host = @"rtmp://52.28.29.59/lens/testLiveRomain";
-	
-	[self.session startRtmpSessionWithURL:host andStreamKey:@"testLiveRomain"];
+	NSString *host = @"rtmp://52.28.29.59/lens/bonjourbonjoudqdr";
+
+	[self.session startRtmpSessionWithURL:host andStreamKey:@"bonjourbonjoudqdr"];
 	[self refreshStream];
 }
 
@@ -269,11 +263,7 @@ static CGFloat const kBackIconMargins = 18.f;
 
 - (BOOL)isSessionRunning
 {
-	if (self.session.rtmpSessionState == VCSessionStateStarted ||
-		self.session.rtmpSessionState == VCSessionStateStarting) {
-		return YES;
-	}
-	return NO;
+	return self.session.rtmpSessionState == VCSessionStateStarted || self.session.rtmpSessionState == VCSessionStateStarting;
 }
 
 - (NSString *)stringFromState:(VCSessionState)state
@@ -293,7 +283,6 @@ static CGFloat const kBackIconMargins = 18.f;
 			return @"VCSessionStateError";
 		default:
 			return nil;
-			break;
 	}
 }
 

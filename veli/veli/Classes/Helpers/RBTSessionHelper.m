@@ -12,9 +12,6 @@
 #import "RBTApi+Authentication.h"
 #import "RBTUser.h"
 
-typedef void (^RBTAuthenticationSuccess)(FBSDKAccessToken *token);
-typedef void (^RBTAuthenticationFailure)(NSError *error, enum RBTAuthenticationStatus status);
-
 @implementation RBTSessionHelper
 
 #pragma mark - Singleton
@@ -34,53 +31,11 @@ typedef void (^RBTAuthenticationFailure)(NSError *error, enum RBTAuthenticationS
 	return [RBTUser currentUser] != nil;
 }
 
-- (void)login:(RBTApiSuccess)success failure:(RBTApiFailure)failure
-{
-	[self facebookAuthenticationWithSuccess:^(FBSDKAccessToken *token) {
-		NSDictionary *params = @{@"social_id": token.userID, @"oauth_token": token.tokenString};
-		[[RBTApi sharedApi] registerWithParameters:params success:^(id ret) {
-			if (success) {
-				success(ret);
-			}
-		} failure:^(NSError *error) {
-			if (failure) {
-				failure(error);
-			}
-		}];
-	} failure:^(NSError *error, enum RBTAuthenticationStatus status) {
-		if (failure) {
-			failure(error);
-		}
-	}];
-	
-
-}
-
 #pragma mark - Facebook authentication
 
 - (BOOL)isFacebookSessionActive
 {
 	return [FBSDKAccessToken currentAccessToken] != nil;
-}
-
-- (void)facebookAuthenticationWithSuccess:(RBTAuthenticationSuccess)success failure:(RBTAuthenticationFailure)failure
-{
-	FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
-	[login logInWithReadPermissions:@[@"email"] handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-		if (error) {
-			if (failure) {
-				failure(error, RBTAuthenticationStatusFailed);
-			}
-		} else if (result.isCancelled) {
-			if (failure) {
-				failure(nil, RBTAuthenticationStatusCanceled);
-			}
-		} else {
-			if (success) {
-				success(result.token);
-			}
-		}
-	}];
 }
 
 #pragma mark - App delegate calls

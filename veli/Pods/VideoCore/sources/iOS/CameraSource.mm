@@ -82,8 +82,7 @@ namespace videocore { namespace iOS {
     m_matrix(glm::mat4(1.f)),
     m_orientationLocked(false),
     m_torchOn(false),
-    m_useInterfaceOrientation(false),
-    m_captureSession(nullptr)
+    m_useInterfaceOrientation(false)
     {}
     
     CameraSource::~CameraSource()
@@ -103,7 +102,7 @@ namespace videocore { namespace iOS {
     }
     
     void
-    CameraSource::setupCamera(int fps, bool useFront, bool useInterfaceOrientation, NSString* sessionPreset, void (^callbackBlock)(void))
+    CameraSource::setupCamera(int fps, bool useFront, bool useInterfaceOrientation, NSString* sessionPreset)
     {
         m_fps = fps;
         m_useInterfaceOrientation = useInterfaceOrientation;
@@ -162,7 +161,6 @@ namespace videocore { namespace iOS {
                     
                     [output setSampleBufferDelegate:((sbCallback*)bThis->m_callbackSession) queue:camQueue];
                     
-                    dispatch_release(camQueue);
                     
                     if([session canAddInput:input]) {
                         [session addInput:input];
@@ -185,9 +183,6 @@ namespace videocore { namespace iOS {
                         }
                     }
                     [output release];
-                }
-                if (callbackBlock) {
-                    callbackBlock();
                 }
             }
         };
@@ -328,7 +323,7 @@ namespace videocore { namespace iOS {
             orientation =[[UIApplication sharedApplication] statusBarOrientation];
         }
         
-        //bool reorient = false;
+        bool reorient = false;
         
         AVCaptureSession* session = (AVCaptureSession*)m_captureSession;
         // [session beginConfiguration];
@@ -341,28 +336,28 @@ namespace videocore { namespace iOS {
                     case UIInterfaceOrientationPortraitUpsideDown:
                         if(av.videoOrientation != AVCaptureVideoOrientationPortraitUpsideDown) {
                             av.videoOrientation = AVCaptureVideoOrientationPortraitUpsideDown;
-                        //    reorient = true;
+                            reorient = true;
                         }
                         break;
                         // UIInterfaceOrientationLandscapeRight, UIDeviceOrientationLandscapeLeft
                     case UIInterfaceOrientationLandscapeRight:
                         if(av.videoOrientation != AVCaptureVideoOrientationLandscapeRight) {
                             av.videoOrientation = AVCaptureVideoOrientationLandscapeRight;
-                        //    reorient = true;
+                            reorient = true;
                         }
                         break;
                         // UIInterfaceOrientationLandscapeLeft, UIDeviceOrientationLandscapeRight
                     case UIInterfaceOrientationLandscapeLeft:
                         if(av.videoOrientation != AVCaptureVideoOrientationLandscapeLeft) {
                             av.videoOrientation = AVCaptureVideoOrientationLandscapeLeft;
-                         //   reorient = true;
+                            reorient = true;
                         }
                         break;
                         // UIInterfaceOrientationPortrait, UIDeviceOrientationPortrait
                     case UIInterfaceOrientationPortrait:
                         if(av.videoOrientation != AVCaptureVideoOrientationPortrait) {
                             av.videoOrientation = AVCaptureVideoOrientationPortrait;
-                        //    reorient = true;
+                            reorient = true;
                         }
                         break;
                     default:
@@ -392,7 +387,7 @@ namespace videocore { namespace iOS {
             
             VideoBufferMetadata md(1.f / float(m_fps));
             
-            md.setData(1, m_matrix, false, shared_from_this());
+            md.setData(1, m_matrix, shared_from_this());
             
             auto pixelBuffer = std::make_shared<Apple::PixelBuffer>(pixelBufferRef, true);
             

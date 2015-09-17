@@ -72,7 +72,7 @@ PODS:
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
   - UriParser-cpp (0.1.3)
-  - VideoCore (0.3.2):
+  - VideoCore (0.3.0):
     - boost (~> 1.51.0)
     - glm (~> 0.9.4.6)
     - UriParser-cpp (~> 0.1.3)
@@ -85,7 +85,7 @@ DEPENDENCIES:
   - Reachability (~> 3.1)
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.6)
-  - VideoCore
+  - VideoCore (= 0.3.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
@@ -99,6 +99,6 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
   UriParser-cpp: cbbe00080ee432ec4833dca863a7fc83adc9b01a
-  VideoCore: 9b783edd81b91a80c5599bae1f98e9c93ee029e7
+  VideoCore: f59f4f33bd5ca4cd6a55a82720cc06bbfdb6793b
 
-COCOAPODS: 0.37.1
+COCOAPODS: 0.38.2

@@ -104,8 +104,7 @@ namespace videocore {
     m_exiting(false),
     m_mixQueue("com.videocore.audiomix", kJobQueuePriorityHigh),
     m_outgoingWindow(nullptr),
-    m_catchingUp(false),
-    m_epoch(std::chrono::steady_clock::now())
+    m_catchingUp(false)
     {
         m_bytesPerSample = outChannelCount * outBitsPerChannel / 8;
 
@@ -129,9 +128,7 @@ namespace videocore {
     {
         m_exiting = true;
         m_mixThreadCond.notify_all();
-        if(m_mixThread.joinable()) {
-            m_mixThread.join();
-        }
+        m_mixThread.join();
         m_mixQueue.mark_exiting();
         m_mixQueue.enqueue_sync([]() {});
     }
@@ -297,6 +294,7 @@ namespace videocore {
             intBuffer = (uint8_t*) malloc(inNumberFrames * 4);
 
             deinterleaveDefloat((float*)buffer, (short*)intBuffer,(int) inNumberFrames, inChannelCount);
+            size = inNumberFrames * 4;
             pInBuffer = intBuffer;
             
         }
