@@ -17,7 +17,7 @@
 
 #import "UIBarButtonItem+RBT.h"
 #import "UINavigationController+RBT.h"
-#import "RBTFriendManager.h"
+#import "RBTFriendCacheService.h"
 
 #import "RBTFriend.h"
 

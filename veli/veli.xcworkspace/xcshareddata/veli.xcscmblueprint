@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "520BD32E99DD9B22B2011A61F0C2663412C72C21",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5B350E1AB3CA6947519E38D0731E0C1A5E36C8A9" : 0,
+    "1DF5FAA02EEEA50E3C60369EC47653D769BA2D91" : 0,
+    "520BD32E99DD9B22B2011A61F0C2663412C72C21" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A82F5A06-66BD-4D9E-8F7C-C8567FB15E5C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5B350E1AB3CA6947519E38D0731E0C1A5E36C8A9" : "veli",
+    "1DF5FAA02EEEA50E3C60369EC47653D769BA2D91" : "liveproject-ios",
+    "520BD32E99DD9B22B2011A61F0C2663412C72C21" : "veli_"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "veli",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "veli\/veli.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pierregoutheraud\/liveproject-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1DF5FAA02EEEA50E3C60369EC47653D769BA2D91"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RomainBSQT\/veliStreamApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "520BD32E99DD9B22B2011A61F0C2663412C72C21"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/RomainBSQT\/veli.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5B350E1AB3CA6947519E38D0731E0C1A5E36C8A9"
+    }
+  ]
+}

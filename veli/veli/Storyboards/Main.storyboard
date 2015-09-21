@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="NNj-71-jM9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="NNj-71-jM9">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SourceSansPro-Regular.otf">
+            <string>SourceSansPro-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="FfV-Yx-mVv">
@@ -23,8 +28,8 @@
                             <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzi-JM-HIK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="P9G-Zz-TT7">
-                                        <rect key="frame" x="61" y="337" width="199" height="58"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="P9G-Zz-TT7">
+                                        <rect key="frame" x="61" y="319" width="199" height="58"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="199" id="Ajs-54-sx3"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="58" id="ZYo-4I-vlV"/>
@@ -36,10 +41,32 @@
                                             </mask>
                                         </variation>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EgH-Og-crO">
+                                        <rect key="frame" x="35" y="412" width="250" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="hC7-VN-X6z"/>
+                                            <constraint firstAttribute="width" constant="250" id="ifl-Ti-itE"/>
+                                        </constraints>
+                                        <state key="normal" image="button-fb">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" image="button-fb-active.png"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Facebook disclaimer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="As6-2W-4wb">
+                                        <rect key="frame" x="96" y="489" width="129" height="19"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="P9G-Zz-TT7" secondAttribute="centerX" constant="-0.5" id="Imy-i6-nYb"/>
+                                    <constraint firstAttribute="bottom" secondItem="As6-2W-4wb" secondAttribute="bottom" constant="60" id="7sP-QG-hhB"/>
+                                    <constraint firstItem="EgH-Og-crO" firstAttribute="top" secondItem="P9G-Zz-TT7" secondAttribute="bottom" constant="35" id="FqG-wz-2MH"/>
+                                    <constraint firstAttribute="centerX" secondItem="P9G-Zz-TT7" secondAttribute="centerX" id="Imy-i6-nYb"/>
+                                    <constraint firstItem="As6-2W-4wb" firstAttribute="centerX" secondItem="hzi-JM-HIK" secondAttribute="centerX" id="TVC-x1-lzn"/>
+                                    <constraint firstItem="As6-2W-4wb" firstAttribute="top" secondItem="EgH-Og-crO" secondAttribute="bottom" constant="20" id="pFG-5n-8s2"/>
+                                    <constraint firstItem="EgH-Og-crO" firstAttribute="centerX" secondItem="hzi-JM-HIK" secondAttribute="centerX" id="vnp-3L-Yaf"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -63,12 +90,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button-fb" width="250" height="57"/>
+        <image name="button-fb-active.png" width="681" height="680"/>
         <image name="loginBackground.jpeg" width="681" height="680"/>
         <image name="logo" width="199" height="58"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

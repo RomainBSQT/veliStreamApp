@@ -7,7 +7,7 @@
 //
 
 #import "RBTFriend.h"
-#import "RBTFriendManager.h"
+#import "RBTFriendCacheService.h"
 #import "RBTApi.h"
 
 @implementation RBTFriend
@@ -45,7 +45,7 @@
 
 + (RACSignal *)allFriends
 {
-	return [[RBTFriendManager sharedInstance] friends];
+	return [[RBTFriendCacheService sharedInstance] friends];
 }
 
 @end

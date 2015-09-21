@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Romain Bousquet. All rights reserved.
 //
 
-#import "RBTFriendManager.h"
+#import "RBTFriendCacheService.h"
 #import "RBTApi+Friends.h"
 
 typedef NS_ENUM(NSInteger, RBTFriendListState) {
@@ -14,23 +14,23 @@ typedef NS_ENUM(NSInteger, RBTFriendListState) {
 	RBTFriendListStateLoaded
 };
 
-@interface RBTFriendManager ()
+@interface RBTFriendCacheService ()
 
 @property (nonatomic) RBTFriendListState cacheState;
 @property (copy, nonatomic) NSArray *friendArray;
 
 @end
 
-@implementation RBTFriendManager
+@implementation RBTFriendCacheService
 
 #pragma mark - Singleton
 
-+ (RBTFriendManager *)sharedInstance
++ (RBTFriendCacheService *)sharedInstance
 {
-	static RBTFriendManager *sharedInstance = nil;
+	static RBTFriendCacheService *sharedInstance = nil;
 	static dispatch_once_t onceToken;
 	dispatch_once(&onceToken, ^{
-		sharedInstance = [[RBTFriendManager alloc] init];
+		sharedInstance = [[RBTFriendCacheService alloc] init];
 	});
 	return sharedInstance;
 }

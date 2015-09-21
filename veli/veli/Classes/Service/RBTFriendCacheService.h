@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RBTFriendManager : NSObject
+@interface RBTFriendCacheService : NSObject
 
-+ (RBTFriendManager *)sharedInstance;
++ (RBTFriendCacheService *)sharedInstance;
 - (RACSignal *)friends;
 
 @end

@@ -9,7 +9,6 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "RBTSessionHelper.h"
-#import "RBTApi+Authentication.h"
 #import "RBTUser.h"
 
 @implementation RBTSessionHelper

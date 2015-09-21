@@ -26,7 +26,7 @@
 	UIImage *iconSearch = [UIImage imageNamed:@"icon-search"];
 	UIImageView *leftView = [[UIImageView alloc] initWithImage:iconSearch];
 	leftView.contentMode = UIViewContentModeCenter;
-	leftView.frame = CGRectMake(0, 0, iconSearch.size.width+20.f, iconSearch.size.height);
+	leftView.frame = CGRectMake(0, 0, iconSearch.size.width + 20.f, iconSearch.size.height);
 	self.textField.leftViewMode = UITextFieldViewModeAlways;
 	self.textField.leftView = leftView;
 	self.textField.delegate = self;
