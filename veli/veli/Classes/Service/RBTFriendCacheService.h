@@ -11,6 +11,6 @@
 @interface RBTFriendCacheService : NSObject
 
 + (RBTFriendCacheService *)sharedInstance;
-- (RACSignal *)friends;
+- (RACSignal *)retrieveFriends;
 
 @end

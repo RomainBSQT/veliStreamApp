@@ -7,7 +7,7 @@
 //
 
 #import "RBTFriendCacheService.h"
-#import "RBTApi+Friends.h"
+#import "RBTFriendsService.h"
 
 typedef NS_ENUM(NSInteger, RBTFriendListState) {
 	RBTFriendListStateNotLoaded,
@@ -47,7 +47,7 @@ typedef NS_ENUM(NSInteger, RBTFriendListState) {
 
 #pragma mark - Public methods
 
-- (RACSignal *)friends
+- (RACSignal *)retrieveFriends
 {
 	switch (self.cacheState) {
 		case RBTFriendListStateNotLoaded:
@@ -65,18 +65,8 @@ typedef NS_ENUM(NSInteger, RBTFriendListState) {
 }
 
 - (RACSignal *)loadFriends
-{	
-	@weakify(self)
-	return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-		[[RBTApi sharedApi] getFriendsWithSuccess:^(NSArray *friendArray) {
-			@strongify(self)
-			self.friendArray = friendArray;
-			[subscriber sendNext:friendArray];
-			self.cacheState = RBTFriendListStateLoaded;
-			[subscriber sendCompleted];
-		} failure:^(NSError *error) {
-			[subscriber sendError:error];
-		}];
+{
+	return [[RBTFriendsService fetchFriends] map:^id(id a) {
 		return nil;
 	}];
 }

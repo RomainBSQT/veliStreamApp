@@ -23,29 +23,32 @@
 
 - (void)setupWithDictionary:(NSDictionary *)dictionary
 {
-	self.distantId = [dictionary nonNullObjectForKey:@"id"];
-	self.live_audience = [dictionary nonNullObjectForKey:@"live_audience"];
-	self.picture_url = [[[dictionary nonNullObjectForKey:@"picture"] nonNullObjectForKey:@"data"] nonNullObjectForKey:@"url"];
-	self.facebook_social_id = [dictionary nonNullObjectForKey:@"social_id"];
-	
-	NSString *firstName = @"";
-	NSString *lastName = @"";
-	if ([dictionary nonNullObjectForKey:@"first_name"]) {
-		firstName = [dictionary nonNullObjectForKey:@"first_name"];
-	}
-	if ([dictionary nonNullObjectForKey:@"last_name"]) {
-		lastName = [dictionary nonNullObjectForKey:@"last_name"];
-	}
-	self.username = [NSString stringWithFormat:@"%@%@", firstName, lastName];
+	self.distantId = [dictionary nonNullObjectForKey:@"_id"];
+	self.avatarUrl = [dictionary nonNullObjectForKey:@"avatar"];
+	self.facebookId = [dictionary nonNullObjectForKey:@"facebook_id"];
+	self.username = [dictionary nonNullObjectForKey:@"username"];
 }
 
-@end
+#pragma mark - Equality
 
-@implementation RBTFriend (Helpers)
-
-+ (RACSignal *)allFriends
+- (BOOL)isEqual:(id)object
 {
-	return [[RBTFriendCacheService sharedInstance] friends];
+	if (self == object) {
+		return YES;
+	}
+	
+	if (![object isKindOfClass:[self class]]) {
+		return NO;
+	}
+	
+	RBTFriend *profile = object;
+	return [profile.distantId isEqualToString:self.distantId] &&
+	[profile.facebookId isEqualToString:self.facebookId];
+}
+
+- (NSUInteger)hash
+{
+	return [self.distantId hash] ^ [self.facebookId hash];
 }
 
 @end

@@ -38,6 +38,7 @@
 		304F5DC71AEB02C700517C7D /* RBTFriendsInviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304F5DC51AEB02C700517C7D /* RBTFriendsInviteViewController.xib */; };
 		304F5DCA1AEB370100517C7D /* RBTAddAllFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F5DC91AEB370100517C7D /* RBTAddAllFriendsCell.m */; };
 		304F5DCC1AEB374400517C7D /* RBTAddAllFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304F5DCB1AEB374400517C7D /* RBTAddAllFriendsCell.xib */; };
+		308CBA481BB0C23D00499FDB /* RBTFriendsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CBA471BB0C23D00499FDB /* RBTFriendsService.m */; settings = {ASSET_TAGS = (); }; };
 		30B57F8C1AD9AD6A00277E64 /* UIViewController+IBP.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B57F8B1AD9AD6A00277E64 /* UIViewController+IBP.m */; };
 		30B57F901AD9B07800277E64 /* RBTPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B57F8F1AD9B07800277E64 /* RBTPlayerViewController.m */; };
 		30BC60471AC8606C00A055D5 /* RBTFriendListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC60461AC8606C00A055D5 /* RBTFriendListHeaderView.m */; };
@@ -123,8 +124,8 @@
 		302E07121ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTAFNetworkingClientManager.m; sourceTree = "<group>"; };
 		302FF1731B210C94007980C8 /* NSString+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RBT.h"; sourceTree = "<group>"; };
 		302FF1741B210C94007980C8 /* NSString+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RBT.m"; sourceTree = "<group>"; };
-		303F6E0B1BAA319000E4934D /* RBTAuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTAuthenticationService.h; sourceTree = "<group>"; };
-		303F6E0C1BAA319000E4934D /* RBTAuthenticationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTAuthenticationService.m; sourceTree = "<group>"; };
+		303F6E0B1BAA319000E4934D /* RBTAuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTAuthenticationService.h; path = ../Service/RBTAuthenticationService.h; sourceTree = "<group>"; };
+		303F6E0C1BAA319000E4934D /* RBTAuthenticationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTAuthenticationService.m; path = ../Service/RBTAuthenticationService.m; sourceTree = "<group>"; };
 		304680281BA8E1EE0023426D /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainWrapper.h; path = Helpers/KeychainWrapper.h; sourceTree = "<group>"; };
 		304680291BA8E1EE0023426D /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainWrapper.m; path = Helpers/KeychainWrapper.m; sourceTree = "<group>"; };
 		3046802A1BA8E1EE0023426D /* RBTAVCamHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTAVCamHelper.h; path = Helpers/RBTAVCamHelper.h; sourceTree = "<group>"; };
@@ -172,6 +173,8 @@
 		304F5DC81AEB370100517C7D /* RBTAddAllFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTAddAllFriendsCell.h; sourceTree = "<group>"; };
 		304F5DC91AEB370100517C7D /* RBTAddAllFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTAddAllFriendsCell.m; sourceTree = "<group>"; };
 		304F5DCB1AEB374400517C7D /* RBTAddAllFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTAddAllFriendsCell.xib; sourceTree = "<group>"; };
+		308CBA461BB0C23D00499FDB /* RBTFriendsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendsService.h; sourceTree = "<group>"; };
+		308CBA471BB0C23D00499FDB /* RBTFriendsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendsService.m; sourceTree = "<group>"; };
 		30B57F8A1AD9AD6A00277E64 /* UIViewController+IBP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IBP.h"; sourceTree = "<group>"; };
 		30B57F8B1AD9AD6A00277E64 /* UIViewController+IBP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IBP.m"; sourceTree = "<group>"; };
 		30B57F8E1AD9B07800277E64 /* RBTPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTPlayerViewController.h; sourceTree = "<group>"; };
@@ -430,8 +433,6 @@
 				30BD7C971B3F279F0057CC31 /* RBTLocalStorageManager.m */,
 				30BD7C991B3F85B70057CC31 /* RBTDataEncryptionManager.h */,
 				30BD7C9A1B3F85B70057CC31 /* RBTDataEncryptionManager.m */,
-				303F6E0B1BAA319000E4934D /* RBTAuthenticationService.h */,
-				303F6E0C1BAA319000E4934D /* RBTAuthenticationService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -511,6 +512,10 @@
 				30C0D8A01AD2119B003D5576 /* RBTURLBuilder.m */,
 				30C0D8A81AD2232F003D5576 /* RBTApi+Friends.h */,
 				30C0D8A91AD2232F003D5576 /* RBTApi+Friends.m */,
+				303F6E0B1BAA319000E4934D /* RBTAuthenticationService.h */,
+				303F6E0C1BAA319000E4934D /* RBTAuthenticationService.m */,
+				308CBA461BB0C23D00499FDB /* RBTFriendsService.h */,
+				308CBA471BB0C23D00499FDB /* RBTFriendsService.m */,
 			);
 			path = WebService;
 			sourceTree = "<group>";
@@ -927,6 +932,7 @@
 				3046805B1BA8E2600023426D /* RBTJoinLeftUserView.m in Sources */,
 				3046804A1BA8E20C0023426D /* RBTNavigationBar.m in Sources */,
 				30C0D8AA1AD2232F003D5576 /* RBTApi+Friends.m in Sources */,
+				308CBA481BB0C23D00499FDB /* RBTFriendsService.m in Sources */,
 				304680331BA8E1EE0023426D /* RBTSessionHelper.m in Sources */,
 				304680691BA8E2790023426D /* RBTFriendViewCell.m in Sources */,
 				304680301BA8E1EE0023426D /* KeychainWrapper.m in Sources */,

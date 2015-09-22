@@ -24,7 +24,7 @@
 {
 	_currentFriend = currentFriend;
 	self.usernameLabel.text = currentFriend.username;
-	self.viewersLabel.text = [currentFriend.live_audience stringValue];
+//	self.viewersLabel.text = [currentFriend.live_audience stringValue];
 }
 
 @end

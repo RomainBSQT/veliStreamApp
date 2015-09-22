@@ -11,6 +11,7 @@
 #import "RBTAuthenticationService.h"
 #import "RBTLocalStorageManager.h"
 #import "RBTApi.h"
+#import "RBTLocalStorageManager.h"
 
 @implementation RBTAuthenticationService
 
@@ -62,5 +63,4 @@
 	}];
 }
 
-	 
 @end

@@ -12,7 +12,7 @@
 #import "RBTNavigationBarTitleView.h"
 #import "RBTFriendListCell.h"
 #import "RBTAddAllFriendsCell.h"
-#import "RBTApi+Friends.h"
+#import "RBTFriendCacheService.h"
 #import "RBTFriend.h"
 
 @interface RBTFriendsInviteViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -75,7 +75,7 @@
 - (void)populateTableView
 {
 	@weakify(self)
-	[[RBTFriend allFriends] subscribeNext:^(NSArray *friendArray) {
+	[[[RBTFriendCacheService sharedInstance] retrieveFriends] subscribeNext:^(NSArray *friendArray) {
 		@strongify(self)
 		self.friendList = friendArray;
 		[self.tableView reloadData];

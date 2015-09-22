@@ -11,7 +11,7 @@
 
 @class RBTFriend;
 
-@interface RBTUser : NSObject <NSSecureCoding>
+@interface RBTUser : NSObject <RBTParsing, NSSecureCoding>
 
 @property (nonatomic, copy) NSString *userToken;
 @property (nonatomic, copy) NSString *distantId;

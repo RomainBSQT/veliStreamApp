@@ -105,12 +105,10 @@ static CGFloat const kHeightNavigationBar = 64.f;
 - (void)populateTableView
 {
 	@weakify(self)
-	[[RBTFriend allFriends] subscribeNext:^(NSArray *friendArray) {
+	[[[RBTFriendCacheService sharedInstance] retrieveFriends] subscribeNext:^(NSArray *friendArray) {
 		@strongify(self)
 		self.friendList = friendArray;
 		[self.tableView reloadData];
-	} error:^(NSError *error) {
-		
 	}];
 }
 

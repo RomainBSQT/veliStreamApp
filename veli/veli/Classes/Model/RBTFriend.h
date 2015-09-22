@@ -11,20 +11,12 @@
 
 @interface RBTFriend : NSObject <RBTParsing>
 
-@property (nonatomic, strong) NSString *distantId;
-@property (nonatomic, strong) NSNumber *live_audience;
-@property (nonatomic, strong) NSNumber *live_status;
-@property (nonatomic, strong) NSString *live_key;
-@property (nonatomic, strong) NSString *username;
-@property (nonatomic, strong) NSString *facebook_social_id;
-@property (nonatomic, strong) NSString *picture_url;
+@property (nonatomic, copy) NSString *distantId;
+@property (nonatomic, copy) NSString *avatarUrl;
+@property (nonatomic, copy) NSString *facebookId;
+@property (nonatomic, copy) NSString *username;
+@property (nonatomic, assign) BOOL isLive;
 
 + (instancetype)friendWithDictionary:(NSDictionary *)dictionary;
-
-@end
-
-@interface RBTFriend (Helpers)
-
-+ (RACSignal *)allFriends;
 
 @end
