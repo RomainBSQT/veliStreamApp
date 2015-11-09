@@ -1,0 +1,1201 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		302E07131ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 302E07121ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.m */; };
+		302FF1751B210C94007980C8 /* NSString+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 302FF1741B210C94007980C8 /* NSString+RBT.m */; };
+		303F6E0D1BAA319000E4934D /* RBTAuthenticationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 303F6E0C1BAA319000E4934D /* RBTAuthenticationService.m */; };
+		304680301BA8E1EE0023426D /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680291BA8E1EE0023426D /* KeychainWrapper.m */; };
+		304680311BA8E1EE0023426D /* RBTAVCamHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046802B1BA8E1EE0023426D /* RBTAVCamHelper.m */; };
+		304680321BA8E1EE0023426D /* RBTServerSentEventHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046802D1BA8E1EE0023426D /* RBTServerSentEventHelper.m */; };
+		304680331BA8E1EE0023426D /* RBTSessionHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046802F1BA8E1EE0023426D /* RBTSessionHelper.m */; };
+		304680471BA8E20C0023426D /* RBTCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680371BA8E20C0023426D /* RBTCollectionViewCell.m */; };
+		304680481BA8E20C0023426D /* RBTLiveInformationsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680391BA8E20C0023426D /* RBTLiveInformationsView.m */; };
+		304680491BA8E20C0023426D /* RBTLiveInformationsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3046803A1BA8E20C0023426D /* RBTLiveInformationsView.xib */; };
+		3046804A1BA8E20C0023426D /* RBTNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046803C1BA8E20C0023426D /* RBTNavigationBar.m */; };
+		3046804B1BA8E20C0023426D /* RBTNavigationBarTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3046803E1BA8E20C0023426D /* RBTNavigationBarTitleView.m */; };
+		3046804C1BA8E20C0023426D /* RBTSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680401BA8E20C0023426D /* RBTSearchBar.m */; };
+		3046804D1BA8E20C0023426D /* RBTSearchBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304680411BA8E20C0023426D /* RBTSearchBar.xib */; };
+		3046804E1BA8E20C0023426D /* RBTTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680431BA8E20C0023426D /* RBTTableViewCell.m */; };
+		3046804F1BA8E20C0023426D /* RBTTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680451BA8E20C0023426D /* RBTTextField.m */; };
+		304680531BA8E24B0023426D /* RBTJoinLeftInformations.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680521BA8E24B0023426D /* RBTJoinLeftInformations.m */; };
+		3046805B1BA8E2600023426D /* RBTJoinLeftUserView.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680561BA8E2600023426D /* RBTJoinLeftUserView.m */; };
+		3046805C1BA8E2600023426D /* RBTJoinLeftUserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304680571BA8E2600023426D /* RBTJoinLeftUserView.xib */; };
+		3046805D1BA8E2600023426D /* RBTJoinLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680591BA8E2600023426D /* RBTJoinLeftViewController.m */; };
+		3046805E1BA8E2600023426D /* RBTJoinLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3046805A1BA8E2600023426D /* RBTJoinLeftViewController.xib */; };
+		304680681BA8E2790023426D /* RBTCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680611BA8E2790023426D /* RBTCollectionViewLayout.m */; };
+		304680691BA8E2790023426D /* RBTFriendViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680631BA8E2790023426D /* RBTFriendViewCell.m */; };
+		3046806A1BA8E2790023426D /* RBTFriendViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304680641BA8E2790023426D /* RBTFriendViewCell.xib */; };
+		3046806B1BA8E2790023426D /* RBTViewersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304680661BA8E2790023426D /* RBTViewersViewController.m */; };
+		3046806C1BA8E2790023426D /* RBTViewersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304680671BA8E2790023426D /* RBTViewersViewController.xib */; };
+		304680751BA8E6520023426D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 304680741BA8E6520023426D /* Main.storyboard */; };
+		304F5DC61AEB02C700517C7D /* RBTFriendsInviteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F5DC41AEB02C700517C7D /* RBTFriendsInviteViewController.m */; };
+		304F5DC71AEB02C700517C7D /* RBTFriendsInviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304F5DC51AEB02C700517C7D /* RBTFriendsInviteViewController.xib */; };
+		304F5DCA1AEB370100517C7D /* RBTAddAllFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F5DC91AEB370100517C7D /* RBTAddAllFriendsCell.m */; };
+		304F5DCC1AEB374400517C7D /* RBTAddAllFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304F5DCB1AEB374400517C7D /* RBTAddAllFriendsCell.xib */; };
+		308CBA481BB0C23D00499FDB /* RBTFriendsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CBA471BB0C23D00499FDB /* RBTFriendsService.m */; };
+		30B57F8C1AD9AD6A00277E64 /* UIViewController+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B57F8B1AD9AD6A00277E64 /* UIViewController+RBT.m */; };
+		30B57F901AD9B07800277E64 /* RBTPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B57F8F1AD9B07800277E64 /* RBTPlayerViewController.m */; };
+		30BC60471AC8606C00A055D5 /* RBTFriendListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC60461AC8606C00A055D5 /* RBTFriendListHeaderView.m */; };
+		30BC60571AC87BBD00A055D5 /* RBTFriendListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC60561AC87BBD00A055D5 /* RBTFriendListCell.m */; };
+		30BC60591AC87BD300A055D5 /* RBTFriendListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30BC60581AC87BD300A055D5 /* RBTFriendListCell.xib */; };
+		30BD5CAF1B3B4E880043A284 /* RBTFriendCacheService.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BD5CAE1B3B4E880043A284 /* RBTFriendCacheService.m */; };
+		30BD7C981B3F279F0057CC31 /* RBTLocalStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BD7C971B3F279F0057CC31 /* RBTLocalStorageManager.m */; };
+		30BD7C9B1B3F85B70057CC31 /* RBTDataEncryptionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BD7C9A1B3F85B70057CC31 /* RBTDataEncryptionManager.m */; };
+		30BFC2681AF18AAB00A33959 /* RBTHomeAndStreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BFC2671AF18AAB00A33959 /* RBTHomeAndStreamingViewController.m */; };
+		30BFC26A1AF18AB900A33959 /* RBTHomeAndStreamingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30BFC2691AF18AB900A33959 /* RBTHomeAndStreamingViewController.xib */; };
+		30C0D8A11AD2119B003D5576 /* RBTURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0D8A01AD2119B003D5576 /* RBTURLBuilder.m */; };
+		30C0D8AA1AD2232F003D5576 /* RBTApi+Friends.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C0D8A91AD2232F003D5576 /* RBTApi+Friends.m */; };
+		30C124501ADF0064009C53D8 /* RBTPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C1244F1ADF0064009C53D8 /* RBTPlayerViewController.xib */; };
+		30C24F011AC0E1D000CA068D /* RBTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24EFF1AC0E1D000CA068D /* RBTLoginViewController.m */; };
+		30C24F021AC0E1D000CA068D /* RBTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30C24F001AC0E1D000CA068D /* RBTLoginViewController.xib */; };
+		30C24F241AC0EB3300CA068D /* UINavigationController+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24F231AC0EB3300CA068D /* UINavigationController+RBT.m */; };
+		30C24F2D1AC0ECFB00CA068D /* UIImage+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24F2C1AC0ECFB00CA068D /* UIImage+RBT.m */; };
+		30C24F361AC0EFF300CA068D /* RBTFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24F351AC0EFF300CA068D /* RBTFriend.m */; };
+		30C24F391AC0EFF400CA068D /* RBTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C24F381AC0EFF400CA068D /* RBTUser.m */; };
+		30C31D271AF4449100D2C2EA /* NSMutableArray+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C31D261AF4449100D2C2EA /* NSMutableArray+RBT.m */; };
+		30CC2D711AC37D2F00F1B188 /* RBTFriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CC2D6F1AC37D2F00F1B188 /* RBTFriendListViewController.m */; };
+		30CC2D721AC37D2F00F1B188 /* RBTFriendListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D701AC37D2F00F1B188 /* RBTFriendListViewController.xib */; };
+		30CC2D761AC3845000F1B188 /* RBTTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CC2D751AC3845000F1B188 /* RBTTheme.m */; };
+		30CC2D791AC384A000F1B188 /* UIColor+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CC2D781AC384A000F1B188 /* UIColor+RBT.m */; };
+		30CC2D861AC38F9B00F1B188 /* SourceSansPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D7A1AC38F9B00F1B188 /* SourceSansPro-Black.otf */; };
+		30CC2D871AC38F9B00F1B188 /* SourceSansPro-BlackIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D7B1AC38F9B00F1B188 /* SourceSansPro-BlackIt.otf */; };
+		30CC2D881AC38F9B00F1B188 /* SourceSansPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D7C1AC38F9B00F1B188 /* SourceSansPro-Bold.otf */; };
+		30CC2D891AC38F9B00F1B188 /* SourceSansPro-BoldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D7D1AC38F9B00F1B188 /* SourceSansPro-BoldIt.otf */; };
+		30CC2D8A1AC38F9B00F1B188 /* SourceSansPro-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D7E1AC38F9B00F1B188 /* SourceSansPro-ExtraLight.otf */; };
+		30CC2D8B1AC38F9B00F1B188 /* SourceSansPro-ExtraLightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D7F1AC38F9B00F1B188 /* SourceSansPro-ExtraLightIt.otf */; };
+		30CC2D8C1AC38F9B00F1B188 /* SourceSansPro-It.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D801AC38F9B00F1B188 /* SourceSansPro-It.otf */; };
+		30CC2D8D1AC38F9B00F1B188 /* SourceSansPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D811AC38F9B00F1B188 /* SourceSansPro-Light.otf */; };
+		30CC2D8E1AC38F9B00F1B188 /* SourceSansPro-LightIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D821AC38F9B00F1B188 /* SourceSansPro-LightIt.otf */; };
+		30CC2D8F1AC38F9B00F1B188 /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D831AC38F9B00F1B188 /* SourceSansPro-Regular.otf */; };
+		30CC2D901AC38F9B00F1B188 /* SourceSansPro-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D841AC38F9B00F1B188 /* SourceSansPro-Semibold.otf */; };
+		30CC2D911AC38F9B00F1B188 /* SourceSansPro-SemiboldIt.otf in Resources */ = {isa = PBXBuildFile; fileRef = 30CC2D851AC38F9B00F1B188 /* SourceSansPro-SemiboldIt.otf */; };
+		30D2E1441AEBC6CF00125B00 /* loginBackground@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 30D2E1431AEBC6CF00125B00 /* loginBackground@2x.jpeg */; };
+		30D2E1491AEC067F00125B00 /* RBTStreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2E1471AEC067F00125B00 /* RBTStreamingViewController.m */; };
+		30D2E14A1AEC067F00125B00 /* RBTStreamingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30D2E1481AEC067F00125B00 /* RBTStreamingViewController.xib */; };
+		30D2E2011AEC0B1300125B00 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E2001AEC0B1300125B00 /* AudioToolbox.framework */; };
+		30D2E2031AEC0B2400125B00 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E2021AEC0B2400125B00 /* CFNetwork.framework */; };
+		30D2E2051AEC0B2E00125B00 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E2041AEC0B2E00125B00 /* CoreData.framework */; };
+		30D2E2071AEC0B3600125B00 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E2061AEC0B3600125B00 /* CoreGraphics.framework */; };
+		30D2E2091AEC0B3D00125B00 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E2081AEC0B3D00125B00 /* CoreMedia.framework */; };
+		30D2E20B1AEC0B4500125B00 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E20A1AEC0B4500125B00 /* CoreVideo.framework */; };
+		30D2E20D1AEC0B4E00125B00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E20C1AEC0B4E00125B00 /* Foundation.framework */; };
+		30D2E20F1AEC0B6000125B00 /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E20E1AEC0B6000125B00 /* libiconv.2.4.0.dylib */; };
+		30D2E2111AEC0B6900125B00 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D2E2101AEC0B6900125B00 /* libz.dylib */; };
+		30D2E4331AED080100125B00 /* UIAlertView+RBTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D2E4321AED080100125B00 /* UIAlertView+RBTAlertView.m */; };
+		30F3D8801ABCFD730081AC89 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F3D87F1ABCFD730081AC89 /* Security.framework */; };
+		30F3D8871ABD03290081AC89 /* RBTApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F3D8861ABD03290081AC89 /* RBTApi.m */; };
+		30F3D8981ABD10270081AC89 /* NSDictionary+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F3D8971ABD10270081AC89 /* NSDictionary+RBT.m */; };
+		30F4AC671ABCF3C900C6AFC1 /* RBTWSUrlConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F4AC661ABCF3C900C6AFC1 /* RBTWSUrlConstants.m */; };
+		30F4AC691ABCF49A00C6AFC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F4AC681ABCF49A00C6AFC1 /* Images.xcassets */; };
+		30F4D7EC1ABA4470003622E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F4D7EB1ABA4470003622E9 /* main.m */; };
+		30F4D7EF1ABA4470003622E9 /* RBTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F4D7EE1ABA4470003622E9 /* RBTAppDelegate.m */; };
+		30F4D7F21ABA4470003622E9 /* RBTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F4D7F11ABA4470003622E9 /* RBTViewController.m */; };
+		30F4D7FA1ABA4470003622E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F4D7F81ABA4470003622E9 /* LaunchScreen.xib */; };
+		30F4D8061ABA4470003622E9 /* veliTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F4D8051ABA4470003622E9 /* veliTests.m */; };
+		30F4D8171ABA4ED9003622E9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30F4D8141ABA4E93003622E9 /* SystemConfiguration.framework */; };
+		30F4D8251ABA55E4003622E9 /* UIView+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F4D8241ABA55E4003622E9 /* UIView+RBT.m */; };
+		30F4D82C1ABA57F2003622E9 /* RBTLaunchScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F4D82A1ABA57F2003622E9 /* RBTLaunchScreenViewController.m */; };
+		30F4D82D1ABA57F2003622E9 /* RBTLaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30F4D82B1ABA57F2003622E9 /* RBTLaunchScreenViewController.xib */; };
+		30FD3FDE1AD078F0009CDD53 /* UIBarButtonItem+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD3FDD1AD078F0009CDD53 /* UIBarButtonItem+RBT.m */; };
+		30FD3FE21AD07D65009CDD53 /* RBTPreLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FD3FE11AD07D65009CDD53 /* RBTPreLiveViewController.m */; };
+		30FD3FE41AD07D9B009CDD53 /* RBTPreLiveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30FD3FE31AD07D9B009CDD53 /* RBTPreLiveViewController.xib */; };
+		30FD3FE61AD0BF4A009CDD53 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30FD3FE51AD0BF4A009CDD53 /* AVFoundation.framework */; };
+		FF0777FD1817C185C49ECCEB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CFD6575A9898E134A7885376 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30F4D8001ABA4470003622E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30F4D7DE1ABA4470003622E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30F4D7E51ABA4470003622E9;
+			remoteInfo = veli;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		302E07111ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTAFNetworkingClientManager.h; sourceTree = "<group>"; };
+		302E07121ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTAFNetworkingClientManager.m; sourceTree = "<group>"; };
+		302FF1731B210C94007980C8 /* NSString+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RBT.h"; sourceTree = "<group>"; };
+		302FF1741B210C94007980C8 /* NSString+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RBT.m"; sourceTree = "<group>"; };
+		303F6E0B1BAA319000E4934D /* RBTAuthenticationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTAuthenticationService.h; path = ../Service/RBTAuthenticationService.h; sourceTree = "<group>"; };
+		303F6E0C1BAA319000E4934D /* RBTAuthenticationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTAuthenticationService.m; path = ../Service/RBTAuthenticationService.m; sourceTree = "<group>"; };
+		304680281BA8E1EE0023426D /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainWrapper.h; path = Helpers/KeychainWrapper.h; sourceTree = "<group>"; };
+		304680291BA8E1EE0023426D /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainWrapper.m; path = Helpers/KeychainWrapper.m; sourceTree = "<group>"; };
+		3046802A1BA8E1EE0023426D /* RBTAVCamHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTAVCamHelper.h; path = Helpers/RBTAVCamHelper.h; sourceTree = "<group>"; };
+		3046802B1BA8E1EE0023426D /* RBTAVCamHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTAVCamHelper.m; path = Helpers/RBTAVCamHelper.m; sourceTree = "<group>"; };
+		3046802C1BA8E1EE0023426D /* RBTServerSentEventHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTServerSentEventHelper.h; path = Helpers/RBTServerSentEventHelper.h; sourceTree = "<group>"; };
+		3046802D1BA8E1EE0023426D /* RBTServerSentEventHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTServerSentEventHelper.m; path = Helpers/RBTServerSentEventHelper.m; sourceTree = "<group>"; };
+		3046802E1BA8E1EE0023426D /* RBTSessionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTSessionHelper.h; path = Helpers/RBTSessionHelper.h; sourceTree = "<group>"; };
+		3046802F1BA8E1EE0023426D /* RBTSessionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTSessionHelper.m; path = Helpers/RBTSessionHelper.m; sourceTree = "<group>"; };
+		304680361BA8E20C0023426D /* RBTCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTCollectionViewCell.h; path = Views/RBTCollectionViewCell.h; sourceTree = "<group>"; };
+		304680371BA8E20C0023426D /* RBTCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTCollectionViewCell.m; path = Views/RBTCollectionViewCell.m; sourceTree = "<group>"; };
+		304680381BA8E20C0023426D /* RBTLiveInformationsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTLiveInformationsView.h; path = Views/RBTLiveInformationsView.h; sourceTree = "<group>"; };
+		304680391BA8E20C0023426D /* RBTLiveInformationsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTLiveInformationsView.m; path = Views/RBTLiveInformationsView.m; sourceTree = "<group>"; };
+		3046803A1BA8E20C0023426D /* RBTLiveInformationsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTLiveInformationsView.xib; path = Views/RBTLiveInformationsView.xib; sourceTree = "<group>"; };
+		3046803B1BA8E20C0023426D /* RBTNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTNavigationBar.h; path = Views/RBTNavigationBar.h; sourceTree = "<group>"; };
+		3046803C1BA8E20C0023426D /* RBTNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTNavigationBar.m; path = Views/RBTNavigationBar.m; sourceTree = "<group>"; };
+		3046803D1BA8E20C0023426D /* RBTNavigationBarTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTNavigationBarTitleView.h; path = Views/RBTNavigationBarTitleView.h; sourceTree = "<group>"; };
+		3046803E1BA8E20C0023426D /* RBTNavigationBarTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTNavigationBarTitleView.m; path = Views/RBTNavigationBarTitleView.m; sourceTree = "<group>"; };
+		3046803F1BA8E20C0023426D /* RBTSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTSearchBar.h; path = Views/RBTSearchBar.h; sourceTree = "<group>"; };
+		304680401BA8E20C0023426D /* RBTSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTSearchBar.m; path = Views/RBTSearchBar.m; sourceTree = "<group>"; };
+		304680411BA8E20C0023426D /* RBTSearchBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTSearchBar.xib; path = Views/RBTSearchBar.xib; sourceTree = "<group>"; };
+		304680421BA8E20C0023426D /* RBTTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTTableViewCell.h; path = Views/RBTTableViewCell.h; sourceTree = "<group>"; };
+		304680431BA8E20C0023426D /* RBTTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTTableViewCell.m; path = Views/RBTTableViewCell.m; sourceTree = "<group>"; };
+		304680441BA8E20C0023426D /* RBTTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTTextField.h; path = Views/RBTTextField.h; sourceTree = "<group>"; };
+		304680451BA8E20C0023426D /* RBTTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTTextField.m; path = Views/RBTTextField.m; sourceTree = "<group>"; };
+		304680511BA8E24B0023426D /* RBTJoinLeftInformations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTJoinLeftInformations.h; path = Views/JoinLeftComponents/RBTJoinLeftInformations.h; sourceTree = "<group>"; };
+		304680521BA8E24B0023426D /* RBTJoinLeftInformations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTJoinLeftInformations.m; path = Views/JoinLeftComponents/RBTJoinLeftInformations.m; sourceTree = "<group>"; };
+		304680551BA8E2600023426D /* RBTJoinLeftUserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTJoinLeftUserView.h; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftUserView.h; sourceTree = "<group>"; };
+		304680561BA8E2600023426D /* RBTJoinLeftUserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTJoinLeftUserView.m; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftUserView.m; sourceTree = "<group>"; };
+		304680571BA8E2600023426D /* RBTJoinLeftUserView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTJoinLeftUserView.xib; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftUserView.xib; sourceTree = "<group>"; };
+		304680581BA8E2600023426D /* RBTJoinLeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTJoinLeftViewController.h; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftViewController.h; sourceTree = "<group>"; };
+		304680591BA8E2600023426D /* RBTJoinLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTJoinLeftViewController.m; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftViewController.m; sourceTree = "<group>"; };
+		3046805A1BA8E2600023426D /* RBTJoinLeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTJoinLeftViewController.xib; path = Views/JoinLeftComponents/FadingPopup/RBTJoinLeftViewController.xib; sourceTree = "<group>"; };
+		304680601BA8E2790023426D /* RBTCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTCollectionViewLayout.h; path = Views/JoinLeftComponents/ViewersCollection/RBTCollectionViewLayout.h; sourceTree = "<group>"; };
+		304680611BA8E2790023426D /* RBTCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTCollectionViewLayout.m; path = Views/JoinLeftComponents/ViewersCollection/RBTCollectionViewLayout.m; sourceTree = "<group>"; };
+		304680621BA8E2790023426D /* RBTFriendViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTFriendViewCell.h; path = Views/JoinLeftComponents/ViewersCollection/RBTFriendViewCell.h; sourceTree = "<group>"; };
+		304680631BA8E2790023426D /* RBTFriendViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTFriendViewCell.m; path = Views/JoinLeftComponents/ViewersCollection/RBTFriendViewCell.m; sourceTree = "<group>"; };
+		304680641BA8E2790023426D /* RBTFriendViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTFriendViewCell.xib; path = Views/JoinLeftComponents/ViewersCollection/RBTFriendViewCell.xib; sourceTree = "<group>"; };
+		304680651BA8E2790023426D /* RBTViewersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RBTViewersViewController.h; path = Views/JoinLeftComponents/ViewersCollection/RBTViewersViewController.h; sourceTree = "<group>"; };
+		304680661BA8E2790023426D /* RBTViewersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RBTViewersViewController.m; path = Views/JoinLeftComponents/ViewersCollection/RBTViewersViewController.m; sourceTree = "<group>"; };
+		304680671BA8E2790023426D /* RBTViewersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RBTViewersViewController.xib; path = Views/JoinLeftComponents/ViewersCollection/RBTViewersViewController.xib; sourceTree = "<group>"; };
+		304680741BA8E6520023426D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		304F5DC31AEB02C700517C7D /* RBTFriendsInviteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendsInviteViewController.h; sourceTree = "<group>"; };
+		304F5DC41AEB02C700517C7D /* RBTFriendsInviteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendsInviteViewController.m; sourceTree = "<group>"; };
+		304F5DC51AEB02C700517C7D /* RBTFriendsInviteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTFriendsInviteViewController.xib; sourceTree = "<group>"; };
+		304F5DC81AEB370100517C7D /* RBTAddAllFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTAddAllFriendsCell.h; sourceTree = "<group>"; };
+		304F5DC91AEB370100517C7D /* RBTAddAllFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTAddAllFriendsCell.m; sourceTree = "<group>"; };
+		304F5DCB1AEB374400517C7D /* RBTAddAllFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTAddAllFriendsCell.xib; sourceTree = "<group>"; };
+		308CBA461BB0C23D00499FDB /* RBTFriendsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendsService.h; sourceTree = "<group>"; };
+		308CBA471BB0C23D00499FDB /* RBTFriendsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendsService.m; sourceTree = "<group>"; };
+		30B57F8A1AD9AD6A00277E64 /* UIViewController+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RBT.h"; sourceTree = "<group>"; };
+		30B57F8B1AD9AD6A00277E64 /* UIViewController+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RBT.m"; sourceTree = "<group>"; };
+		30B57F8E1AD9B07800277E64 /* RBTPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTPlayerViewController.h; sourceTree = "<group>"; };
+		30B57F8F1AD9B07800277E64 /* RBTPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTPlayerViewController.m; sourceTree = "<group>"; };
+		30BC60451AC8606C00A055D5 /* RBTFriendListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendListHeaderView.h; sourceTree = "<group>"; };
+		30BC60461AC8606C00A055D5 /* RBTFriendListHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendListHeaderView.m; sourceTree = "<group>"; };
+		30BC60551AC87BBD00A055D5 /* RBTFriendListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendListCell.h; sourceTree = "<group>"; };
+		30BC60561AC87BBD00A055D5 /* RBTFriendListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendListCell.m; sourceTree = "<group>"; };
+		30BC60581AC87BD300A055D5 /* RBTFriendListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTFriendListCell.xib; sourceTree = "<group>"; };
+		30BD5CAD1B3B4E880043A284 /* RBTFriendCacheService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendCacheService.h; sourceTree = "<group>"; };
+		30BD5CAE1B3B4E880043A284 /* RBTFriendCacheService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendCacheService.m; sourceTree = "<group>"; };
+		30BD7C961B3F279F0057CC31 /* RBTLocalStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTLocalStorageManager.h; sourceTree = "<group>"; };
+		30BD7C971B3F279F0057CC31 /* RBTLocalStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTLocalStorageManager.m; sourceTree = "<group>"; };
+		30BD7C991B3F85B70057CC31 /* RBTDataEncryptionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTDataEncryptionManager.h; sourceTree = "<group>"; };
+		30BD7C9A1B3F85B70057CC31 /* RBTDataEncryptionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTDataEncryptionManager.m; sourceTree = "<group>"; };
+		30BFC2661AF18AAB00A33959 /* RBTHomeAndStreamingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTHomeAndStreamingViewController.h; sourceTree = "<group>"; };
+		30BFC2671AF18AAB00A33959 /* RBTHomeAndStreamingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTHomeAndStreamingViewController.m; sourceTree = "<group>"; };
+		30BFC2691AF18AB900A33959 /* RBTHomeAndStreamingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTHomeAndStreamingViewController.xib; sourceTree = "<group>"; };
+		30C0D89F1AD2119B003D5576 /* RBTURLBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTURLBuilder.h; sourceTree = "<group>"; };
+		30C0D8A01AD2119B003D5576 /* RBTURLBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTURLBuilder.m; sourceTree = "<group>"; };
+		30C0D8A81AD2232F003D5576 /* RBTApi+Friends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RBTApi+Friends.h"; sourceTree = "<group>"; };
+		30C0D8A91AD2232F003D5576 /* RBTApi+Friends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RBTApi+Friends.m"; sourceTree = "<group>"; };
+		30C1244F1ADF0064009C53D8 /* RBTPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTPlayerViewController.xib; sourceTree = "<group>"; };
+		30C24EFE1AC0E1D000CA068D /* RBTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTLoginViewController.h; sourceTree = "<group>"; };
+		30C24EFF1AC0E1D000CA068D /* RBTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTLoginViewController.m; sourceTree = "<group>"; };
+		30C24F001AC0E1D000CA068D /* RBTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTLoginViewController.xib; sourceTree = "<group>"; };
+		30C24F221AC0EB3300CA068D /* UINavigationController+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RBT.h"; sourceTree = "<group>"; };
+		30C24F231AC0EB3300CA068D /* UINavigationController+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RBT.m"; sourceTree = "<group>"; };
+		30C24F2B1AC0ECFA00CA068D /* UIImage+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RBT.h"; sourceTree = "<group>"; };
+		30C24F2C1AC0ECFB00CA068D /* UIImage+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RBT.m"; sourceTree = "<group>"; };
+		30C24F341AC0EFF300CA068D /* RBTFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriend.h; sourceTree = "<group>"; };
+		30C24F351AC0EFF300CA068D /* RBTFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriend.m; sourceTree = "<group>"; };
+		30C24F371AC0EFF400CA068D /* RBTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTUser.h; sourceTree = "<group>"; };
+		30C24F381AC0EFF400CA068D /* RBTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTUser.m; sourceTree = "<group>"; };
+		30C31D251AF4449100D2C2EA /* NSMutableArray+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+RBT.h"; sourceTree = "<group>"; };
+		30C31D261AF4449100D2C2EA /* NSMutableArray+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+RBT.m"; sourceTree = "<group>"; };
+		30CC2D6E1AC37D2F00F1B188 /* RBTFriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendListViewController.h; sourceTree = "<group>"; };
+		30CC2D6F1AC37D2F00F1B188 /* RBTFriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendListViewController.m; sourceTree = "<group>"; };
+		30CC2D701AC37D2F00F1B188 /* RBTFriendListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTFriendListViewController.xib; sourceTree = "<group>"; };
+		30CC2D741AC3845000F1B188 /* RBTTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTTheme.h; sourceTree = "<group>"; };
+		30CC2D751AC3845000F1B188 /* RBTTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTTheme.m; sourceTree = "<group>"; };
+		30CC2D771AC384A000F1B188 /* UIColor+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+RBT.h"; sourceTree = "<group>"; };
+		30CC2D781AC384A000F1B188 /* UIColor+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+RBT.m"; sourceTree = "<group>"; };
+		30CC2D7A1AC38F9B00F1B188 /* SourceSansPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Black.otf"; sourceTree = "<group>"; };
+		30CC2D7B1AC38F9B00F1B188 /* SourceSansPro-BlackIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BlackIt.otf"; sourceTree = "<group>"; };
+		30CC2D7C1AC38F9B00F1B188 /* SourceSansPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.otf"; sourceTree = "<group>"; };
+		30CC2D7D1AC38F9B00F1B188 /* SourceSansPro-BoldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-BoldIt.otf"; sourceTree = "<group>"; };
+		30CC2D7E1AC38F9B00F1B188 /* SourceSansPro-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLight.otf"; sourceTree = "<group>"; };
+		30CC2D7F1AC38F9B00F1B188 /* SourceSansPro-ExtraLightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-ExtraLightIt.otf"; sourceTree = "<group>"; };
+		30CC2D801AC38F9B00F1B188 /* SourceSansPro-It.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-It.otf"; sourceTree = "<group>"; };
+		30CC2D811AC38F9B00F1B188 /* SourceSansPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Light.otf"; sourceTree = "<group>"; };
+		30CC2D821AC38F9B00F1B188 /* SourceSansPro-LightIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-LightIt.otf"; sourceTree = "<group>"; };
+		30CC2D831AC38F9B00F1B188 /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
+		30CC2D841AC38F9B00F1B188 /* SourceSansPro-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Semibold.otf"; sourceTree = "<group>"; };
+		30CC2D851AC38F9B00F1B188 /* SourceSansPro-SemiboldIt.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiboldIt.otf"; sourceTree = "<group>"; };
+		30D2E1431AEBC6CF00125B00 /* loginBackground@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "loginBackground@2x.jpeg"; sourceTree = "<group>"; };
+		30D2E1461AEC067F00125B00 /* RBTStreamingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTStreamingViewController.h; sourceTree = "<group>"; };
+		30D2E1471AEC067F00125B00 /* RBTStreamingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTStreamingViewController.m; sourceTree = "<group>"; };
+		30D2E1481AEC067F00125B00 /* RBTStreamingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTStreamingViewController.xib; sourceTree = "<group>"; };
+		30D2E2001AEC0B1300125B00 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		30D2E2021AEC0B2400125B00 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		30D2E2041AEC0B2E00125B00 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		30D2E2061AEC0B3600125B00 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		30D2E2081AEC0B3D00125B00 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		30D2E20A1AEC0B4500125B00 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		30D2E20C1AEC0B4E00125B00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		30D2E20E1AEC0B6000125B00 /* libiconv.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.4.0.dylib; path = usr/lib/libiconv.2.4.0.dylib; sourceTree = SDKROOT; };
+		30D2E2101AEC0B6900125B00 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		30D2E4311AED080100125B00 /* UIAlertView+RBTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+RBTAlertView.h"; sourceTree = "<group>"; };
+		30D2E4321AED080100125B00 /* UIAlertView+RBTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+RBTAlertView.m"; sourceTree = "<group>"; };
+		30F3D87F1ABCFD730081AC89 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		30F3D8851ABD03290081AC89 /* RBTApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTApi.h; sourceTree = "<group>"; };
+		30F3D8861ABD03290081AC89 /* RBTApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTApi.m; sourceTree = "<group>"; };
+		30F3D88A1ABD09020081AC89 /* RBTDebugMaccros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBTDebugMaccros.h; sourceTree = "<group>"; };
+		30F3D8961ABD10270081AC89 /* NSDictionary+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RBT.h"; sourceTree = "<group>"; };
+		30F3D8971ABD10270081AC89 /* NSDictionary+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RBT.m"; sourceTree = "<group>"; };
+		30F3D8A11ABD11760081AC89 /* RBTParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTParsing.h; sourceTree = "<group>"; };
+		30F4AC651ABCF3C900C6AFC1 /* RBTWSUrlConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTWSUrlConstants.h; sourceTree = "<group>"; };
+		30F4AC661ABCF3C900C6AFC1 /* RBTWSUrlConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTWSUrlConstants.m; sourceTree = "<group>"; };
+		30F4AC681ABCF49A00C6AFC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		30F4D7E61ABA4470003622E9 /* veli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veli.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F4D7EA1ABA4470003622E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F4D7EB1ABA4470003622E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30F4D7ED1ABA4470003622E9 /* RBTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBTAppDelegate.h; sourceTree = "<group>"; };
+		30F4D7EE1ABA4470003622E9 /* RBTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBTAppDelegate.m; sourceTree = "<group>"; };
+		30F4D7F01ABA4470003622E9 /* RBTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBTViewController.h; sourceTree = "<group>"; };
+		30F4D7F11ABA4470003622E9 /* RBTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RBTViewController.m; sourceTree = "<group>"; };
+		30F4D7F91ABA4470003622E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		30F4D7FF1ABA4470003622E9 /* veliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = veliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F4D8041ABA4470003622E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30F4D8051ABA4470003622E9 /* veliTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = veliTests.m; sourceTree = "<group>"; };
+		30F4D8141ABA4E93003622E9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		30F4D8231ABA55E4003622E9 /* UIView+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RBT.h"; sourceTree = "<group>"; };
+		30F4D8241ABA55E4003622E9 /* UIView+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RBT.m"; sourceTree = "<group>"; };
+		30F4D8261ABA5677003622E9 /* veli-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "veli-Prefix.pch"; sourceTree = "<group>"; };
+		30F4D8291ABA57F2003622E9 /* RBTLaunchScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTLaunchScreenViewController.h; sourceTree = "<group>"; };
+		30F4D82A1ABA57F2003622E9 /* RBTLaunchScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTLaunchScreenViewController.m; sourceTree = "<group>"; };
+		30F4D82B1ABA57F2003622E9 /* RBTLaunchScreenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTLaunchScreenViewController.xib; sourceTree = "<group>"; };
+		30FD3FDC1AD078F0009CDD53 /* UIBarButtonItem+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+RBT.h"; sourceTree = "<group>"; };
+		30FD3FDD1AD078F0009CDD53 /* UIBarButtonItem+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+RBT.m"; sourceTree = "<group>"; };
+		30FD3FE01AD07D65009CDD53 /* RBTPreLiveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTPreLiveViewController.h; sourceTree = "<group>"; };
+		30FD3FE11AD07D65009CDD53 /* RBTPreLiveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTPreLiveViewController.m; sourceTree = "<group>"; };
+		30FD3FE31AD07D9B009CDD53 /* RBTPreLiveViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTPreLiveViewController.xib; sourceTree = "<group>"; };
+		30FD3FE51AD0BF4A009CDD53 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5754B19B1376ABEDE201274F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		C77E831F02952C484A761A2F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CFD6575A9898E134A7885376 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30F4D7E31ABA4470003622E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D2E2111AEC0B6900125B00 /* libz.dylib in Frameworks */,
+				30D2E20F1AEC0B6000125B00 /* libiconv.2.4.0.dylib in Frameworks */,
+				30F3D8801ABCFD730081AC89 /* Security.framework in Frameworks */,
+				30D2E20D1AEC0B4E00125B00 /* Foundation.framework in Frameworks */,
+				30D2E20B1AEC0B4500125B00 /* CoreVideo.framework in Frameworks */,
+				30D2E2091AEC0B3D00125B00 /* CoreMedia.framework in Frameworks */,
+				30D2E2071AEC0B3600125B00 /* CoreGraphics.framework in Frameworks */,
+				30D2E2051AEC0B2E00125B00 /* CoreData.framework in Frameworks */,
+				30D2E2031AEC0B2400125B00 /* CFNetwork.framework in Frameworks */,
+				30D2E2011AEC0B1300125B00 /* AudioToolbox.framework in Frameworks */,
+				30FD3FE61AD0BF4A009CDD53 /* AVFoundation.framework in Frameworks */,
+				30F4D8171ABA4ED9003622E9 /* SystemConfiguration.framework in Frameworks */,
+				FF0777FD1817C185C49ECCEB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F4D7FC1ABA4470003622E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		304680271BA8E1C30023426D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				304680281BA8E1EE0023426D /* KeychainWrapper.h */,
+				304680291BA8E1EE0023426D /* KeychainWrapper.m */,
+				3046802A1BA8E1EE0023426D /* RBTAVCamHelper.h */,
+				3046802B1BA8E1EE0023426D /* RBTAVCamHelper.m */,
+				3046802C1BA8E1EE0023426D /* RBTServerSentEventHelper.h */,
+				3046802D1BA8E1EE0023426D /* RBTServerSentEventHelper.m */,
+				3046802E1BA8E1EE0023426D /* RBTSessionHelper.h */,
+				3046802F1BA8E1EE0023426D /* RBTSessionHelper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		304680341BA8E1FC0023426D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				304680501BA8E2400023426D /* JoinLeftComponents */,
+				304680361BA8E20C0023426D /* RBTCollectionViewCell.h */,
+				304680371BA8E20C0023426D /* RBTCollectionViewCell.m */,
+				304680381BA8E20C0023426D /* RBTLiveInformationsView.h */,
+				304680391BA8E20C0023426D /* RBTLiveInformationsView.m */,
+				3046803A1BA8E20C0023426D /* RBTLiveInformationsView.xib */,
+				3046803B1BA8E20C0023426D /* RBTNavigationBar.h */,
+				3046803C1BA8E20C0023426D /* RBTNavigationBar.m */,
+				3046803D1BA8E20C0023426D /* RBTNavigationBarTitleView.h */,
+				3046803E1BA8E20C0023426D /* RBTNavigationBarTitleView.m */,
+				3046803F1BA8E20C0023426D /* RBTSearchBar.h */,
+				304680401BA8E20C0023426D /* RBTSearchBar.m */,
+				304680411BA8E20C0023426D /* RBTSearchBar.xib */,
+				304680421BA8E20C0023426D /* RBTTableViewCell.h */,
+				304680431BA8E20C0023426D /* RBTTableViewCell.m */,
+				304680441BA8E20C0023426D /* RBTTextField.h */,
+				304680451BA8E20C0023426D /* RBTTextField.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		304680501BA8E2400023426D /* JoinLeftComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3046805F1BA8E26C0023426D /* ViewersCollection */,
+				304680541BA8E24F0023426D /* FadingPopup */,
+				304680511BA8E24B0023426D /* RBTJoinLeftInformations.h */,
+				304680521BA8E24B0023426D /* RBTJoinLeftInformations.m */,
+			);
+			name = JoinLeftComponents;
+			sourceTree = "<group>";
+		};
+		304680541BA8E24F0023426D /* FadingPopup */ = {
+			isa = PBXGroup;
+			children = (
+				304680551BA8E2600023426D /* RBTJoinLeftUserView.h */,
+				304680561BA8E2600023426D /* RBTJoinLeftUserView.m */,
+				304680571BA8E2600023426D /* RBTJoinLeftUserView.xib */,
+				304680581BA8E2600023426D /* RBTJoinLeftViewController.h */,
+				304680591BA8E2600023426D /* RBTJoinLeftViewController.m */,
+				3046805A1BA8E2600023426D /* RBTJoinLeftViewController.xib */,
+			);
+			name = FadingPopup;
+			sourceTree = "<group>";
+		};
+		3046805F1BA8E26C0023426D /* ViewersCollection */ = {
+			isa = PBXGroup;
+			children = (
+				304680601BA8E2790023426D /* RBTCollectionViewLayout.h */,
+				304680611BA8E2790023426D /* RBTCollectionViewLayout.m */,
+				304680621BA8E2790023426D /* RBTFriendViewCell.h */,
+				304680631BA8E2790023426D /* RBTFriendViewCell.m */,
+				304680641BA8E2790023426D /* RBTFriendViewCell.xib */,
+				304680651BA8E2790023426D /* RBTViewersViewController.h */,
+				304680661BA8E2790023426D /* RBTViewersViewController.m */,
+				304680671BA8E2790023426D /* RBTViewersViewController.xib */,
+			);
+			name = ViewersCollection;
+			sourceTree = "<group>";
+		};
+		304680711BA8E5F20023426D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				304680741BA8E6520023426D /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		304F5DC21AEB029600517C7D /* LiveSetup */ = {
+			isa = PBXGroup;
+			children = (
+				304F5DC31AEB02C700517C7D /* RBTFriendsInviteViewController.h */,
+				304F5DC41AEB02C700517C7D /* RBTFriendsInviteViewController.m */,
+				304F5DC51AEB02C700517C7D /* RBTFriendsInviteViewController.xib */,
+				304F5DC81AEB370100517C7D /* RBTAddAllFriendsCell.h */,
+				304F5DC91AEB370100517C7D /* RBTAddAllFriendsCell.m */,
+				304F5DCB1AEB374400517C7D /* RBTAddAllFriendsCell.xib */,
+			);
+			path = LiveSetup;
+			sourceTree = "<group>";
+		};
+		30B57F8D1AD9B02C00277E64 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				30B57F8E1AD9B07800277E64 /* RBTPlayerViewController.h */,
+				30B57F8F1AD9B07800277E64 /* RBTPlayerViewController.m */,
+				30C1244F1ADF0064009C53D8 /* RBTPlayerViewController.xib */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		30BD7C951B3F240D0057CC31 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				30BD5CAD1B3B4E880043A284 /* RBTFriendCacheService.h */,
+				30BD5CAE1B3B4E880043A284 /* RBTFriendCacheService.m */,
+				30BD7C961B3F279F0057CC31 /* RBTLocalStorageManager.h */,
+				30BD7C971B3F279F0057CC31 /* RBTLocalStorageManager.m */,
+				30BD7C991B3F85B70057CC31 /* RBTDataEncryptionManager.h */,
+				30BD7C9A1B3F85B70057CC31 /* RBTDataEncryptionManager.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		30BFC2651AF1899200A33959 /* Streaming */ = {
+			isa = PBXGroup;
+			children = (
+				30BFC2661AF18AAB00A33959 /* RBTHomeAndStreamingViewController.h */,
+				30BFC2671AF18AAB00A33959 /* RBTHomeAndStreamingViewController.m */,
+				30BFC2691AF18AB900A33959 /* RBTHomeAndStreamingViewController.xib */,
+				30D2E1451AEC065E00125B00 /* Stream */,
+				30FD3FDF1AD07B63009CDD53 /* PreLive */,
+			);
+			path = Streaming;
+			sourceTree = "<group>";
+		};
+		30C24F211AC0E82F00CA068D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				30C24EFE1AC0E1D000CA068D /* RBTLoginViewController.h */,
+				30C24EFF1AC0E1D000CA068D /* RBTLoginViewController.m */,
+				30C24F001AC0E1D000CA068D /* RBTLoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		30CC2D6D1AC37CBD00F1B188 /* FriendList */ = {
+			isa = PBXGroup;
+			children = (
+				30CC2D6E1AC37D2F00F1B188 /* RBTFriendListViewController.h */,
+				30CC2D6F1AC37D2F00F1B188 /* RBTFriendListViewController.m */,
+				30CC2D701AC37D2F00F1B188 /* RBTFriendListViewController.xib */,
+				30BC60451AC8606C00A055D5 /* RBTFriendListHeaderView.h */,
+				30BC60461AC8606C00A055D5 /* RBTFriendListHeaderView.m */,
+				30BC60551AC87BBD00A055D5 /* RBTFriendListCell.h */,
+				30BC60561AC87BBD00A055D5 /* RBTFriendListCell.m */,
+				30BC60581AC87BD300A055D5 /* RBTFriendListCell.xib */,
+			);
+			path = FriendList;
+			sourceTree = "<group>";
+		};
+		30CC2D731AC3843500F1B188 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				30CC2D741AC3845000F1B188 /* RBTTheme.h */,
+				30CC2D751AC3845000F1B188 /* RBTTheme.m */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		30D2E1421AEBC3E200125B00 /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				30D2E1431AEBC6CF00125B00 /* loginBackground@2x.jpeg */,
+			);
+			path = Pictures;
+			sourceTree = "<group>";
+		};
+		30D2E1451AEC065E00125B00 /* Stream */ = {
+			isa = PBXGroup;
+			children = (
+				30D2E1461AEC067F00125B00 /* RBTStreamingViewController.h */,
+				30D2E1471AEC067F00125B00 /* RBTStreamingViewController.m */,
+				30D2E1481AEC067F00125B00 /* RBTStreamingViewController.xib */,
+			);
+			path = Stream;
+			sourceTree = "<group>";
+		};
+		30F3D8841ABD03180081AC89 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				30F3D8851ABD03290081AC89 /* RBTApi.h */,
+				30F3D8861ABD03290081AC89 /* RBTApi.m */,
+				302E07111ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.h */,
+				302E07121ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.m */,
+				30C0D89F1AD2119B003D5576 /* RBTURLBuilder.h */,
+				30C0D8A01AD2119B003D5576 /* RBTURLBuilder.m */,
+				30C0D8A81AD2232F003D5576 /* RBTApi+Friends.h */,
+				30C0D8A91AD2232F003D5576 /* RBTApi+Friends.m */,
+				303F6E0B1BAA319000E4934D /* RBTAuthenticationService.h */,
+				303F6E0C1BAA319000E4934D /* RBTAuthenticationService.m */,
+				308CBA461BB0C23D00499FDB /* RBTFriendsService.h */,
+				308CBA471BB0C23D00499FDB /* RBTFriendsService.m */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		30F3D8A01ABD115B0081AC89 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				30F3D8A11ABD11760081AC89 /* RBTParsing.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		30F4AC611ABCEE7D00C6AFC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30C24F371AC0EFF400CA068D /* RBTUser.h */,
+				30C24F381AC0EFF400CA068D /* RBTUser.m */,
+				30C24F341AC0EFF300CA068D /* RBTFriend.h */,
+				30C24F351AC0EFF300CA068D /* RBTFriend.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30F4D7DD1ABA4470003622E9 = {
+			isa = PBXGroup;
+			children = (
+				30F4D7E81ABA4470003622E9 /* veli */,
+				30F4D8161ABA4EC0003622E9 /* Frameworks */,
+				30F4D8021ABA4470003622E9 /* veliTests */,
+				30F4D7E71ABA4470003622E9 /* Products */,
+				808D0AFCA1DB9F26232D2038 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		30F4D7E71ABA4470003622E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30F4D7E61ABA4470003622E9 /* veli.app */,
+				30F4D7FF1ABA4470003622E9 /* veliTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30F4D7E81ABA4470003622E9 /* veli */ = {
+			isa = PBXGroup;
+			children = (
+				304680711BA8E5F20023426D /* Storyboards */,
+				30F4D8181ABA505F003622E9 /* Classes */,
+				30F4D8271ABA579C003622E9 /* UI */,
+				30F4D7E91ABA4470003622E9 /* Supporting Files */,
+			);
+			path = veli;
+			sourceTree = "<group>";
+		};
+		30F4D7E91ABA4470003622E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30D2E1421AEBC3E200125B00 /* Pictures */,
+				30F4AC681ABCF49A00C6AFC1 /* Images.xcassets */,
+				30F4D8131ABA4709003622E9 /* Launch Screen */,
+				30F4D8111ABA46BA003622E9 /* App Delegate */,
+				30F4D8121ABA46DB003622E9 /* Fonts */,
+				30F4D7EA1ABA4470003622E9 /* Info.plist */,
+				30F4D7EB1ABA4470003622E9 /* main.m */,
+				30F4D8261ABA5677003622E9 /* veli-Prefix.pch */,
+				30F3D88A1ABD09020081AC89 /* RBTDebugMaccros.h */,
+				30F4AC651ABCF3C900C6AFC1 /* RBTWSUrlConstants.h */,
+				30F4AC661ABCF3C900C6AFC1 /* RBTWSUrlConstants.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30F4D8021ABA4470003622E9 /* veliTests */ = {
+			isa = PBXGroup;
+			children = (
+				30F4D8051ABA4470003622E9 /* veliTests.m */,
+				30F4D8031ABA4470003622E9 /* Supporting Files */,
+			);
+			path = veliTests;
+			sourceTree = "<group>";
+		};
+		30F4D8031ABA4470003622E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30F4D8041ABA4470003622E9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30F4D8111ABA46BA003622E9 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				30F4D7ED1ABA4470003622E9 /* RBTAppDelegate.h */,
+				30F4D7EE1ABA4470003622E9 /* RBTAppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		30F4D8121ABA46DB003622E9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				30CC2D7A1AC38F9B00F1B188 /* SourceSansPro-Black.otf */,
+				30CC2D7B1AC38F9B00F1B188 /* SourceSansPro-BlackIt.otf */,
+				30CC2D7C1AC38F9B00F1B188 /* SourceSansPro-Bold.otf */,
+				30CC2D7D1AC38F9B00F1B188 /* SourceSansPro-BoldIt.otf */,
+				30CC2D7E1AC38F9B00F1B188 /* SourceSansPro-ExtraLight.otf */,
+				30CC2D7F1AC38F9B00F1B188 /* SourceSansPro-ExtraLightIt.otf */,
+				30CC2D801AC38F9B00F1B188 /* SourceSansPro-It.otf */,
+				30CC2D811AC38F9B00F1B188 /* SourceSansPro-Light.otf */,
+				30CC2D821AC38F9B00F1B188 /* SourceSansPro-LightIt.otf */,
+				30CC2D831AC38F9B00F1B188 /* SourceSansPro-Regular.otf */,
+				30CC2D841AC38F9B00F1B188 /* SourceSansPro-Semibold.otf */,
+				30CC2D851AC38F9B00F1B188 /* SourceSansPro-SemiboldIt.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		30F4D8131ABA4709003622E9 /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				30F4D7F81ABA4470003622E9 /* LaunchScreen.xib */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		30F4D8161ABA4EC0003622E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30D2E2101AEC0B6900125B00 /* libz.dylib */,
+				30D2E20E1AEC0B6000125B00 /* libiconv.2.4.0.dylib */,
+				30D2E20C1AEC0B4E00125B00 /* Foundation.framework */,
+				30D2E20A1AEC0B4500125B00 /* CoreVideo.framework */,
+				30D2E2081AEC0B3D00125B00 /* CoreMedia.framework */,
+				30D2E2061AEC0B3600125B00 /* CoreGraphics.framework */,
+				30D2E2041AEC0B2E00125B00 /* CoreData.framework */,
+				30D2E2021AEC0B2400125B00 /* CFNetwork.framework */,
+				30D2E2001AEC0B1300125B00 /* AudioToolbox.framework */,
+				30FD3FE51AD0BF4A009CDD53 /* AVFoundation.framework */,
+				30F3D87F1ABCFD730081AC89 /* Security.framework */,
+				30F4D8141ABA4E93003622E9 /* SystemConfiguration.framework */,
+				CFD6575A9898E134A7885376 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30F4D8181ABA505F003622E9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				304680341BA8E1FC0023426D /* Views */,
+				304680271BA8E1C30023426D /* Helpers */,
+				30BD7C951B3F240D0057CC31 /* Service */,
+				30F3D8841ABD03180081AC89 /* WebService */,
+				30F4AC611ABCEE7D00C6AFC1 /* Model */,
+				30F4D8191ABA506B003622E9 /* Generic */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		30F4D8191ABA506B003622E9 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				30CC2D731AC3843500F1B188 /* Themes */,
+				30F3D8A01ABD115B0081AC89 /* Protocols */,
+				30F4D81E1ABA5586003622E9 /* Categories */,
+				30F4D81A1ABA50B9003622E9 /* ViewController */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		30F4D81A1ABA50B9003622E9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				30F4D7F01ABA4470003622E9 /* RBTViewController.h */,
+				30F4D7F11ABA4470003622E9 /* RBTViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		30F4D81E1ABA5586003622E9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				30F4D8231ABA55E4003622E9 /* UIView+RBT.h */,
+				30F4D8241ABA55E4003622E9 /* UIView+RBT.m */,
+				30F3D8961ABD10270081AC89 /* NSDictionary+RBT.h */,
+				30F3D8971ABD10270081AC89 /* NSDictionary+RBT.m */,
+				30C24F221AC0EB3300CA068D /* UINavigationController+RBT.h */,
+				30C24F231AC0EB3300CA068D /* UINavigationController+RBT.m */,
+				30C24F2B1AC0ECFA00CA068D /* UIImage+RBT.h */,
+				30C24F2C1AC0ECFB00CA068D /* UIImage+RBT.m */,
+				30CC2D771AC384A000F1B188 /* UIColor+RBT.h */,
+				30CC2D781AC384A000F1B188 /* UIColor+RBT.m */,
+				30FD3FDC1AD078F0009CDD53 /* UIBarButtonItem+RBT.h */,
+				30FD3FDD1AD078F0009CDD53 /* UIBarButtonItem+RBT.m */,
+				30B57F8A1AD9AD6A00277E64 /* UIViewController+RBT.h */,
+				30B57F8B1AD9AD6A00277E64 /* UIViewController+RBT.m */,
+				30D2E4311AED080100125B00 /* UIAlertView+RBTAlertView.h */,
+				30D2E4321AED080100125B00 /* UIAlertView+RBTAlertView.m */,
+				30C31D251AF4449100D2C2EA /* NSMutableArray+RBT.h */,
+				30C31D261AF4449100D2C2EA /* NSMutableArray+RBT.m */,
+				302FF1731B210C94007980C8 /* NSString+RBT.h */,
+				302FF1741B210C94007980C8 /* NSString+RBT.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		30F4D8271ABA579C003622E9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				30BFC2651AF1899200A33959 /* Streaming */,
+				304F5DC21AEB029600517C7D /* LiveSetup */,
+				30B57F8D1AD9B02C00277E64 /* Player */,
+				30CC2D6D1AC37CBD00F1B188 /* FriendList */,
+				30C24F211AC0E82F00CA068D /* Login */,
+				30F4D8281ABA57BA003622E9 /* Launchscreen */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		30F4D8281ABA57BA003622E9 /* Launchscreen */ = {
+			isa = PBXGroup;
+			children = (
+				30F4D8291ABA57F2003622E9 /* RBTLaunchScreenViewController.h */,
+				30F4D82A1ABA57F2003622E9 /* RBTLaunchScreenViewController.m */,
+				30F4D82B1ABA57F2003622E9 /* RBTLaunchScreenViewController.xib */,
+			);
+			path = Launchscreen;
+			sourceTree = "<group>";
+		};
+		30FD3FDF1AD07B63009CDD53 /* PreLive */ = {
+			isa = PBXGroup;
+			children = (
+				30FD3FE01AD07D65009CDD53 /* RBTPreLiveViewController.h */,
+				30FD3FE11AD07D65009CDD53 /* RBTPreLiveViewController.m */,
+				30FD3FE31AD07D9B009CDD53 /* RBTPreLiveViewController.xib */,
+			);
+			path = PreLive;
+			sourceTree = "<group>";
+		};
+		808D0AFCA1DB9F26232D2038 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5754B19B1376ABEDE201274F /* Pods.debug.xcconfig */,
+				C77E831F02952C484A761A2F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30F4D7E51ABA4470003622E9 /* veli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30F4D8091ABA4470003622E9 /* Build configuration list for PBXNativeTarget "veli" */;
+			buildPhases = (
+				A388E6426A841EB7F480B3B6 /* Check Pods Manifest.lock */,
+				30F4D7E21ABA4470003622E9 /* Sources */,
+				30F4D7E31ABA4470003622E9 /* Frameworks */,
+				30F4D7E41ABA4470003622E9 /* Resources */,
+				597B3B3B994D0B33310C3E9F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = veli;
+			productName = veli;
+			productReference = 30F4D7E61ABA4470003622E9 /* veli.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30F4D7FE1ABA4470003622E9 /* veliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30F4D80C1ABA4470003622E9 /* Build configuration list for PBXNativeTarget "veliTests" */;
+			buildPhases = (
+				30F4D7FB1ABA4470003622E9 /* Sources */,
+				30F4D7FC1ABA4470003622E9 /* Frameworks */,
+				30F4D7FD1ABA4470003622E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30F4D8011ABA4470003622E9 /* PBXTargetDependency */,
+			);
+			name = veliTests;
+			productName = veliTests;
+			productReference = 30F4D7FF1ABA4470003622E9 /* veliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30F4D7DE1ABA4470003622E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Romain Bousquet";
+				TargetAttributes = {
+					30F4D7E51ABA4470003622E9 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = LH79FP5FVF;
+					};
+					30F4D7FE1ABA4470003622E9 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 30F4D7E51ABA4470003622E9;
+					};
+				};
+			};
+			buildConfigurationList = 30F4D7E11ABA4470003622E9 /* Build configuration list for PBXProject "veli" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30F4D7DD1ABA4470003622E9;
+			productRefGroup = 30F4D7E71ABA4470003622E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30F4D7E51ABA4470003622E9 /* veli */,
+				30F4D7FE1ABA4470003622E9 /* veliTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30F4D7E41ABA4470003622E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3046805C1BA8E2600023426D /* RBTJoinLeftUserView.xib in Resources */,
+				30CC2D891AC38F9B00F1B188 /* SourceSansPro-BoldIt.otf in Resources */,
+				30F4AC691ABCF49A00C6AFC1 /* Images.xcassets in Resources */,
+				30CC2D901AC38F9B00F1B188 /* SourceSansPro-Semibold.otf in Resources */,
+				30D2E1441AEBC6CF00125B00 /* loginBackground@2x.jpeg in Resources */,
+				30F4D82D1ABA57F2003622E9 /* RBTLaunchScreenViewController.xib in Resources */,
+				30CC2D871AC38F9B00F1B188 /* SourceSansPro-BlackIt.otf in Resources */,
+				30CC2D721AC37D2F00F1B188 /* RBTFriendListViewController.xib in Resources */,
+				30CC2D911AC38F9B00F1B188 /* SourceSansPro-SemiboldIt.otf in Resources */,
+				30CC2D881AC38F9B00F1B188 /* SourceSansPro-Bold.otf in Resources */,
+				30CC2D8B1AC38F9B00F1B188 /* SourceSansPro-ExtraLightIt.otf in Resources */,
+				30FD3FE41AD07D9B009CDD53 /* RBTPreLiveViewController.xib in Resources */,
+				30CC2D8E1AC38F9B00F1B188 /* SourceSansPro-LightIt.otf in Resources */,
+				30CC2D861AC38F9B00F1B188 /* SourceSansPro-Black.otf in Resources */,
+				30CC2D8C1AC38F9B00F1B188 /* SourceSansPro-It.otf in Resources */,
+				304F5DC71AEB02C700517C7D /* RBTFriendsInviteViewController.xib in Resources */,
+				30F4D7FA1ABA4470003622E9 /* LaunchScreen.xib in Resources */,
+				30C24F021AC0E1D000CA068D /* RBTLoginViewController.xib in Resources */,
+				30CC2D8A1AC38F9B00F1B188 /* SourceSansPro-ExtraLight.otf in Resources */,
+				304680491BA8E20C0023426D /* RBTLiveInformationsView.xib in Resources */,
+				30BC60591AC87BD300A055D5 /* RBTFriendListCell.xib in Resources */,
+				3046805E1BA8E2600023426D /* RBTJoinLeftViewController.xib in Resources */,
+				30CC2D8F1AC38F9B00F1B188 /* SourceSansPro-Regular.otf in Resources */,
+				3046806A1BA8E2790023426D /* RBTFriendViewCell.xib in Resources */,
+				3046806C1BA8E2790023426D /* RBTViewersViewController.xib in Resources */,
+				30C124501ADF0064009C53D8 /* RBTPlayerViewController.xib in Resources */,
+				304680751BA8E6520023426D /* Main.storyboard in Resources */,
+				304F5DCC1AEB374400517C7D /* RBTAddAllFriendsCell.xib in Resources */,
+				3046804D1BA8E20C0023426D /* RBTSearchBar.xib in Resources */,
+				30BFC26A1AF18AB900A33959 /* RBTHomeAndStreamingViewController.xib in Resources */,
+				30D2E14A1AEC067F00125B00 /* RBTStreamingViewController.xib in Resources */,
+				30CC2D8D1AC38F9B00F1B188 /* SourceSansPro-Light.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F4D7FD1ABA4470003622E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		597B3B3B994D0B33310C3E9F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A388E6426A841EB7F480B3B6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30F4D7E21ABA4470003622E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3046805D1BA8E2600023426D /* RBTJoinLeftViewController.m in Sources */,
+				3046805B1BA8E2600023426D /* RBTJoinLeftUserView.m in Sources */,
+				3046804A1BA8E20C0023426D /* RBTNavigationBar.m in Sources */,
+				30C0D8AA1AD2232F003D5576 /* RBTApi+Friends.m in Sources */,
+				308CBA481BB0C23D00499FDB /* RBTFriendsService.m in Sources */,
+				304680331BA8E1EE0023426D /* RBTSessionHelper.m in Sources */,
+				304680691BA8E2790023426D /* RBTFriendViewCell.m in Sources */,
+				304680301BA8E1EE0023426D /* KeychainWrapper.m in Sources */,
+				30F4AC671ABCF3C900C6AFC1 /* RBTWSUrlConstants.m in Sources */,
+				304680471BA8E20C0023426D /* RBTCollectionViewCell.m in Sources */,
+				30D2E4331AED080100125B00 /* UIAlertView+RBTAlertView.m in Sources */,
+				304680681BA8E2790023426D /* RBTCollectionViewLayout.m in Sources */,
+				30CC2D791AC384A000F1B188 /* UIColor+RBT.m in Sources */,
+				3046806B1BA8E2790023426D /* RBTViewersViewController.m in Sources */,
+				3046804B1BA8E20C0023426D /* RBTNavigationBarTitleView.m in Sources */,
+				304680311BA8E1EE0023426D /* RBTAVCamHelper.m in Sources */,
+				30B57F8C1AD9AD6A00277E64 /* UIViewController+RBT.m in Sources */,
+				304F5DC61AEB02C700517C7D /* RBTFriendsInviteViewController.m in Sources */,
+				3046804E1BA8E20C0023426D /* RBTTableViewCell.m in Sources */,
+				304680481BA8E20C0023426D /* RBTLiveInformationsView.m in Sources */,
+				30C31D271AF4449100D2C2EA /* NSMutableArray+RBT.m in Sources */,
+				3046804F1BA8E20C0023426D /* RBTTextField.m in Sources */,
+				30F4D7F21ABA4470003622E9 /* RBTViewController.m in Sources */,
+				302E07131ABF9F3800DF6FA2 /* RBTAFNetworkingClientManager.m in Sources */,
+				30FD3FE21AD07D65009CDD53 /* RBTPreLiveViewController.m in Sources */,
+				30F3D8871ABD03290081AC89 /* RBTApi.m in Sources */,
+				30CC2D761AC3845000F1B188 /* RBTTheme.m in Sources */,
+				30F4D7EF1ABA4470003622E9 /* RBTAppDelegate.m in Sources */,
+				30C0D8A11AD2119B003D5576 /* RBTURLBuilder.m in Sources */,
+				30BC60571AC87BBD00A055D5 /* RBTFriendListCell.m in Sources */,
+				30C24F2D1AC0ECFB00CA068D /* UIImage+RBT.m in Sources */,
+				30FD3FDE1AD078F0009CDD53 /* UIBarButtonItem+RBT.m in Sources */,
+				30C24F391AC0EFF400CA068D /* RBTUser.m in Sources */,
+				304F5DCA1AEB370100517C7D /* RBTAddAllFriendsCell.m in Sources */,
+				30B57F901AD9B07800277E64 /* RBTPlayerViewController.m in Sources */,
+				30C24F011AC0E1D000CA068D /* RBTLoginViewController.m in Sources */,
+				3046804C1BA8E20C0023426D /* RBTSearchBar.m in Sources */,
+				304680531BA8E24B0023426D /* RBTJoinLeftInformations.m in Sources */,
+				30BD5CAF1B3B4E880043A284 /* RBTFriendCacheService.m in Sources */,
+				30BC60471AC8606C00A055D5 /* RBTFriendListHeaderView.m in Sources */,
+				304680321BA8E1EE0023426D /* RBTServerSentEventHelper.m in Sources */,
+				30BFC2681AF18AAB00A33959 /* RBTHomeAndStreamingViewController.m in Sources */,
+				30F4D82C1ABA57F2003622E9 /* RBTLaunchScreenViewController.m in Sources */,
+				303F6E0D1BAA319000E4934D /* RBTAuthenticationService.m in Sources */,
+				30F3D8981ABD10270081AC89 /* NSDictionary+RBT.m in Sources */,
+				30BD7C981B3F279F0057CC31 /* RBTLocalStorageManager.m in Sources */,
+				30C24F241AC0EB3300CA068D /* UINavigationController+RBT.m in Sources */,
+				30D2E1491AEC067F00125B00 /* RBTStreamingViewController.m in Sources */,
+				30F4D7EC1ABA4470003622E9 /* main.m in Sources */,
+				30CC2D711AC37D2F00F1B188 /* RBTFriendListViewController.m in Sources */,
+				30C24F361AC0EFF300CA068D /* RBTFriend.m in Sources */,
+				302FF1751B210C94007980C8 /* NSString+RBT.m in Sources */,
+				30BD7C9B1B3F85B70057CC31 /* RBTDataEncryptionManager.m in Sources */,
+				30F4D8251ABA55E4003622E9 /* UIView+RBT.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30F4D7FB1ABA4470003622E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F4D8061ABA4470003622E9 /* veliTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30F4D8011ABA4470003622E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30F4D7E51ABA4470003622E9 /* veli */;
+			targetProxy = 30F4D8001ABA4470003622E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30F4D7F81ABA4470003622E9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30F4D7F91ABA4470003622E9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30F4D8071ABA4470003622E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		30F4D8081ABA4470003622E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30F4D80A1ABA4470003622E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5754B19B1376ABEDE201274F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_PREFIX_HEADER = "veli/Supporting Files/veli-Prefix.pch";
+				INFOPLIST_FILE = "veli/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "RBT.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		30F4D80B1ABA4470003622E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C77E831F02952C484A761A2F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_PREFIX_HEADER = "veli/Supporting Files/veli-Prefix.pch";
+				INFOPLIST_FILE = "veli/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "RBT.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		30F4D80D1ABA4470003622E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "veliTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RBT.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/veli.app/veli";
+			};
+			name = Debug;
+		};
+		30F4D80E1ABA4470003622E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "veliTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RBT.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/veli.app/veli";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30F4D7E11ABA4470003622E9 /* Build configuration list for PBXProject "veli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F4D8071ABA4470003622E9 /* Debug */,
+				30F4D8081ABA4470003622E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30F4D8091ABA4470003622E9 /* Build configuration list for PBXNativeTarget "veli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F4D80A1ABA4470003622E9 /* Debug */,
+				30F4D80B1ABA4470003622E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30F4D80C1ABA4470003622E9 /* Build configuration list for PBXNativeTarget "veliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30F4D80D1ABA4470003622E9 /* Debug */,
+				30F4D80E1ABA4470003622E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30F4D7DE1ABA4470003622E9 /* Project object */;
+}

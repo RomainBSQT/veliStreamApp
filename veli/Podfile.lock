@@ -1,0 +1,104 @@
+PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - Bolts (1.2.0):
+    - Bolts/AppLinks (= 1.2.0)
+    - Bolts/Tasks (= 1.2.0)
+  - Bolts/AppLinks (1.2.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.2.0)
+  - boost (1.51.0):
+    - boost/graph-includes (= 1.51.0)
+    - boost/math-includes (= 1.51.0)
+    - boost/numeric-includes (= 1.51.0)
+    - boost/pointer_cast-includes (= 1.51.0)
+    - boost/preprocessor-includes (= 1.51.0)
+    - boost/shared_ptr-includes (= 1.51.0)
+    - boost/string_algorithms-includes (= 1.51.0)
+  - boost/graph-includes (1.51.0)
+  - boost/math-includes (1.51.0)
+  - boost/numeric-includes (1.51.0)
+  - boost/pointer_cast-includes (1.51.0)
+  - boost/preprocessor-includes (1.51.0)
+  - boost/shared_ptr-includes (1.51.0)
+  - boost/string_algorithms-includes (1.51.0)
+  - EventSource (1.0.0)
+  - Facebook-iOS-SDK (4.0):
+    - Bolts (~> 1.0)
+    - Facebook-iOS-SDK/CoreKit (= 4.0)
+    - Facebook-iOS-SDK/LoginKit (= 4.0)
+    - Facebook-iOS-SDK/ShareKit (= 4.0)
+  - Facebook-iOS-SDK/CoreKit (4.0):
+    - Bolts (~> 1.0)
+    - Facebook-iOS-SDK/CoreKit/no-arc (= 4.0)
+  - Facebook-iOS-SDK/CoreKit/no-arc (4.0):
+    - Bolts (~> 1.0)
+  - Facebook-iOS-SDK/LoginKit (4.0):
+    - Bolts (~> 1.0)
+    - Facebook-iOS-SDK/CoreKit
+  - Facebook-iOS-SDK/ShareKit (4.0):
+    - Bolts (~> 1.0)
+    - Facebook-iOS-SDK/CoreKit
+  - glm (0.9.4.6)
+  - MagicalRecord (2.3.0)
+  - Reachability (3.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
+  - UriParser-cpp (0.1.3)
+  - VideoCore (0.3.0):
+    - boost (~> 1.51.0)
+    - glm (~> 0.9.4.6)
+    - UriParser-cpp (~> 0.1.3)
+
+DEPENDENCIES:
+  - AFNetworking
+  - EventSource (~> 1.0.0)
+  - Facebook-iOS-SDK (= 4.0)
+  - MagicalRecord
+  - Reachability (~> 3.1)
+  - ReactiveCocoa (~> 2.5)
+  - SDWebImage (~> 3.6)
+  - VideoCore (= 0.3.0)
+
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  Bolts: d176cb1e0012175589e389a9db49b85e27787576
+  boost: 6c5c8d8daef26ac83c1e1c00ad14de62b80161d7
+  EventSource: 58cfd8560bbe8a809e987f1bfa336168b8781873
+  Facebook-iOS-SDK: 523ee69fdd3c37cdca6578c79912f47943035806
+  glm: e22c8d9df10404059b19c2952f9fa44d9a9f3056
+  MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  UriParser-cpp: cbbe00080ee432ec4833dca863a7fc83adc9b01a
+  VideoCore: f59f4f33bd5ca4cd6a55a82720cc06bbfdb6793b
+
+COCOAPODS: 0.38.2

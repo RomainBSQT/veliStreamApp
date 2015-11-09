@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="SourceSansPro-Bold.otf">
+            <string>SourceSansPro-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RBTJoinLeftUserView">
+            <rect key="frame" x="0.0" y="0.0" width="176" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F9O-lo-mnI" userLabel="placeHolderView">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="J" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQ6-Oo-quq" userLabel="letterLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2bA-Ed-vnU"/>
+                        <constraint firstAttribute="trailing" secondItem="kQ6-Oo-quq" secondAttribute="trailing" id="5ta-ir-ISQ"/>
+                        <constraint firstItem="kQ6-Oo-quq" firstAttribute="leading" secondItem="F9O-lo-mnI" secondAttribute="leading" id="ETA-vz-lDE"/>
+                        <constraint firstItem="kQ6-Oo-quq" firstAttribute="top" secondItem="F9O-lo-mnI" secondAttribute="top" id="FRV-PG-Gmd"/>
+                        <constraint firstAttribute="width" constant="50" id="cLN-39-dWJ"/>
+                        <constraint firstAttribute="bottom" secondItem="kQ6-Oo-quq" secondAttribute="bottom" id="eH1-1N-5kz"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romain joined" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6z-wI-wvd">
+                    <rect key="frame" x="65" y="16" width="96" height="19"/>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="kxR-y9-DWT">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="AMV-kk-hT2"/>
+                        <constraint firstAttribute="width" secondItem="kxR-y9-DWT" secondAttribute="height" multiplier="1:1" id="EFr-YQ-CMx"/>
+                        <constraint firstAttribute="width" constant="50" id="THu-Ok-ga6"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="EFr-YQ-CMx"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.5490196078431373" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="e6z-wI-wvd" secondAttribute="centerY" id="17V-wQ-xvK"/>
+                <constraint firstAttribute="bottom" secondItem="kxR-y9-DWT" secondAttribute="bottom" id="21o-DD-2LP"/>
+                <constraint firstAttribute="trailing" secondItem="e6z-wI-wvd" secondAttribute="trailing" constant="15" id="Eej-G0-nm3"/>
+                <constraint firstItem="kxR-y9-DWT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Pgn-TA-ZgK"/>
+                <constraint firstItem="F9O-lo-mnI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cOj-Hc-LQv"/>
+                <constraint firstItem="kxR-y9-DWT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dRB-CJ-Ecr"/>
+                <constraint firstItem="e6z-wI-wvd" firstAttribute="leading" secondItem="kxR-y9-DWT" secondAttribute="trailing" constant="15" id="gtx-yq-3ax"/>
+                <constraint firstItem="F9O-lo-mnI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yKP-Fg-yDK"/>
+                <constraint firstAttribute="bottom" secondItem="F9O-lo-mnI" secondAttribute="bottom" id="zcn-eK-1e5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="letterLabel" destination="kQ6-Oo-quq" id="2sI-bH-vPT"/>
+                <outlet property="picture" destination="kxR-y9-DWT" id="Cff-1U-G2v"/>
+                <outlet property="placeholderView" destination="F9O-lo-mnI" id="cgP-2M-7wX"/>
+                <outlet property="title" destination="e6z-wI-wvd" id="173-aR-TQx"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="-266"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginBackground.jpeg" width="681" height="680"/>
+    </resources>
+</document>
