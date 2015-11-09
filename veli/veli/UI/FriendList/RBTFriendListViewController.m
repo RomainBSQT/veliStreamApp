@@ -67,11 +67,6 @@ static CGFloat const kHeightNavigationBar = 64.f;
 	[self.navigationController.view removeGestureRecognizer:self.dismissKeyboardTap];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 #pragma mark - Setup
 
 - (void)configureNavigationButtons
@@ -105,11 +100,13 @@ static CGFloat const kHeightNavigationBar = 64.f;
 - (void)populateTableView
 {
 	@weakify(self)
-	[[[RBTFriendCacheService sharedInstance] retrieveFriends] subscribeNext:^(NSArray *friendArray) {
-		@strongify(self)
-		self.friendList = friendArray;
-		[self.tableView reloadData];
-	}];
+    [[[RBTFriendCacheService sharedInstance] retrieveFriends] subscribeNext:^(NSArray *friendArray) {
+        @strongify(self)
+        self.friendList = friendArray;
+        [self.tableView reloadData];
+    } error:^(NSError *error) {
+        // Handle error, todo : create error cell
+    }];
 }
 
 #pragma mark - UITableViewDataSource
