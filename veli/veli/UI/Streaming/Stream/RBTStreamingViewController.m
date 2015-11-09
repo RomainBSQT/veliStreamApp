@@ -101,16 +101,16 @@ static CGFloat const kBackIconMargins = 18.f;
 
 - (void)startSSE
 {
-//	@weakify(self)
-//	[[self.SSEEvents onEvent:kMainEventName] subscribeNext:^(NSDictionary *eventDatas) {
-//		@strongify(self)
-//		[self pushUsers:eventDatas[@"events"]];
-//	} error:^(NSError *error) {
-//		@strongify(self)
-//		if (error.code == -1001) { //-- Timeout
-//			[self startSSE];
-//		}
-//	}];
+	@weakify(self)
+	[[self.SSEEvents onEvent:kMainEventName] subscribeNext:^(NSDictionary *eventDatas) {
+		@strongify(self)
+		[self pushUsers:eventDatas[@"events"]];
+	} error:^(NSError *error) {
+		@strongify(self)
+		if (error.code == -1001) { //-- Timeout
+			[self startSSE];
+		}
+	}];
 }
 
 - (void)pushUsers:(NSArray *)userArray

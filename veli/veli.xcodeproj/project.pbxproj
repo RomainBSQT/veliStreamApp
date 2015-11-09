@@ -38,8 +38,8 @@
 		304F5DC71AEB02C700517C7D /* RBTFriendsInviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304F5DC51AEB02C700517C7D /* RBTFriendsInviteViewController.xib */; };
 		304F5DCA1AEB370100517C7D /* RBTAddAllFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F5DC91AEB370100517C7D /* RBTAddAllFriendsCell.m */; };
 		304F5DCC1AEB374400517C7D /* RBTAddAllFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 304F5DCB1AEB374400517C7D /* RBTAddAllFriendsCell.xib */; };
-		308CBA481BB0C23D00499FDB /* RBTFriendsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CBA471BB0C23D00499FDB /* RBTFriendsService.m */; settings = {ASSET_TAGS = (); }; };
-		30B57F8C1AD9AD6A00277E64 /* UIViewController+IBP.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B57F8B1AD9AD6A00277E64 /* UIViewController+IBP.m */; };
+		308CBA481BB0C23D00499FDB /* RBTFriendsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 308CBA471BB0C23D00499FDB /* RBTFriendsService.m */; };
+		30B57F8C1AD9AD6A00277E64 /* UIViewController+RBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B57F8B1AD9AD6A00277E64 /* UIViewController+RBT.m */; };
 		30B57F901AD9B07800277E64 /* RBTPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B57F8F1AD9B07800277E64 /* RBTPlayerViewController.m */; };
 		30BC60471AC8606C00A055D5 /* RBTFriendListHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC60461AC8606C00A055D5 /* RBTFriendListHeaderView.m */; };
 		30BC60571AC87BBD00A055D5 /* RBTFriendListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BC60561AC87BBD00A055D5 /* RBTFriendListCell.m */; };
@@ -175,8 +175,8 @@
 		304F5DCB1AEB374400517C7D /* RBTAddAllFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RBTAddAllFriendsCell.xib; sourceTree = "<group>"; };
 		308CBA461BB0C23D00499FDB /* RBTFriendsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendsService.h; sourceTree = "<group>"; };
 		308CBA471BB0C23D00499FDB /* RBTFriendsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTFriendsService.m; sourceTree = "<group>"; };
-		30B57F8A1AD9AD6A00277E64 /* UIViewController+IBP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+IBP.h"; sourceTree = "<group>"; };
-		30B57F8B1AD9AD6A00277E64 /* UIViewController+IBP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+IBP.m"; sourceTree = "<group>"; };
+		30B57F8A1AD9AD6A00277E64 /* UIViewController+RBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RBT.h"; sourceTree = "<group>"; };
+		30B57F8B1AD9AD6A00277E64 /* UIViewController+RBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RBT.m"; sourceTree = "<group>"; };
 		30B57F8E1AD9B07800277E64 /* RBTPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTPlayerViewController.h; sourceTree = "<group>"; };
 		30B57F8F1AD9B07800277E64 /* RBTPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBTPlayerViewController.m; sourceTree = "<group>"; };
 		30BC60451AC8606C00A055D5 /* RBTFriendListHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBTFriendListHeaderView.h; sourceTree = "<group>"; };
@@ -709,8 +709,8 @@
 				30CC2D781AC384A000F1B188 /* UIColor+RBT.m */,
 				30FD3FDC1AD078F0009CDD53 /* UIBarButtonItem+RBT.h */,
 				30FD3FDD1AD078F0009CDD53 /* UIBarButtonItem+RBT.m */,
-				30B57F8A1AD9AD6A00277E64 /* UIViewController+IBP.h */,
-				30B57F8B1AD9AD6A00277E64 /* UIViewController+IBP.m */,
+				30B57F8A1AD9AD6A00277E64 /* UIViewController+RBT.h */,
+				30B57F8B1AD9AD6A00277E64 /* UIViewController+RBT.m */,
 				30D2E4311AED080100125B00 /* UIAlertView+RBTAlertView.h */,
 				30D2E4321AED080100125B00 /* UIAlertView+RBTAlertView.m */,
 				30C31D251AF4449100D2C2EA /* NSMutableArray+RBT.h */,
@@ -944,7 +944,7 @@
 				3046806B1BA8E2790023426D /* RBTViewersViewController.m in Sources */,
 				3046804B1BA8E20C0023426D /* RBTNavigationBarTitleView.m in Sources */,
 				304680311BA8E1EE0023426D /* RBTAVCamHelper.m in Sources */,
-				30B57F8C1AD9AD6A00277E64 /* UIViewController+IBP.m in Sources */,
+				30B57F8C1AD9AD6A00277E64 /* UIViewController+RBT.m in Sources */,
 				304F5DC61AEB02C700517C7D /* RBTFriendsInviteViewController.m in Sources */,
 				3046804E1BA8E20C0023426D /* RBTTableViewCell.m in Sources */,
 				304680481BA8E20C0023426D /* RBTLiveInformationsView.m in Sources */,
@@ -1101,10 +1101,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_PREFIX_HEADER = "veli/Supporting Files/veli-Prefix.pch";
 				INFOPLIST_FILE = "veli/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1125,10 +1122,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_PREFIX_HEADER = "veli/Supporting Files/veli-Prefix.pch";
 				INFOPLIST_FILE = "veli/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
@@ -1145,10 +1139,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1165,10 +1156,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "veliTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "RBT.$(PRODUCT_NAME:rfc1034identifier)";

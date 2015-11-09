@@ -43,7 +43,7 @@
 		[RBTLocalStorageManager save:[RBTUser userWithDictionary:responseDict]];
 		[(RBTAppDelegate *)[[UIApplication sharedApplication] delegate] showHome];
 	} error:^(NSError *error) {
-		
+		//-- TODO : handle errors
 	}];
 }
 

@@ -17,8 +17,9 @@ static CGFloat const kBackIconMargins = 18.f;
 
 @interface RBTPlayerViewController ()
 
-@property (strong, nonatomic) RBTLiveInformationsView *liveInformationView;
 @property (weak, nonatomic) IBOutlet UIButton *backButton;
+
+@property (strong, nonatomic) RBTLiveInformationsView *liveInformationView;
 @property (strong, nonatomic) MPMoviePlayerController *player;
 
 @end
@@ -52,11 +53,6 @@ static CGFloat const kBackIconMargins = 18.f;
 {
 	[super viewWillDisappear:animated];
 	[self.player stop];
-}
-
-- (void)didReceiveMemoryWarning
-{
-	[super didReceiveMemoryWarning];
 }
 
 #pragma mark - Setup

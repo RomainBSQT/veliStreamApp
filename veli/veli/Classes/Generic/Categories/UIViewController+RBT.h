@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (IBP)
+@interface UIViewController (RBT)
 
 - (void)handleAPIError:(NSError *)error;
 - (void)addChildViewController:(UIViewController *)childController withEdgeInsets:(UIEdgeInsets)edgeInsets inView:(UIView*)containerView;

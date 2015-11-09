@@ -21,14 +21,8 @@
 	[super awakeFromNib];
 	
 	self.selectionStyle = UITableViewCellSelectionStyleNone;
-	
 	self.addFriendsImage.userInteractionEnabled = NO;
 	self.addFriendsImage.alpha = 0.15f;
-}
-
-- (void)prepareForReuse
-{
-	[super prepareForReuse];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

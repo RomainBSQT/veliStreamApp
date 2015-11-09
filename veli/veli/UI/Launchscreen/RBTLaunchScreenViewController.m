@@ -27,9 +27,4 @@
 	[(RBTAppDelegate *)[[UIApplication sharedApplication] delegate] showHome];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 @end

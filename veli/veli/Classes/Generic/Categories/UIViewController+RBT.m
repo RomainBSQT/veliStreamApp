@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Romain Bousquet. All rights reserved.
 //
 
-#import "UIViewController+IBP.h"
+#import "UIViewController+RBT.h"
 #import "UIAlertView+RBTAlertView.h"
 
-@implementation UIViewController (IBP)
+@implementation UIViewController (RBT)
 
 - (void)handleAPIError:(NSError *)error
 {

@@ -29,6 +29,7 @@ static CGFloat const kHeightNavigationBar = 64.f;
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *keyboardHeight;
+
 @property (strong, nonatomic) RBTFriendListHeaderView *headerView;
 @property (strong, nonatomic) NSArray *friendList;
 @property (strong, nonatomic) UITapGestureRecognizer *dismissKeyboardTap;
@@ -47,7 +48,6 @@ static CGFloat const kHeightNavigationBar = 64.f;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
 	[self configureNavigationButtons];
 	[self configureSubviews];
 	[self populateTableView];

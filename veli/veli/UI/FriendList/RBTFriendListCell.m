@@ -82,7 +82,7 @@
 			self.cancelButton.hidden = NO;
 			self.confirmButton.enabled = YES;
 			self.cancelButton.enabled = YES;
-			self.liveIcon.hidden = YES;// ![currentFriend.live_status boolValue];
+			self.liveIcon.hidden = YES; // ![currentFriend.live_status boolValue];
 			break;
 		case RBTFriendListCellTypeAddFriend:
 			self.liveIcon.hidden = YES;

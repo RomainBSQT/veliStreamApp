@@ -44,11 +44,6 @@
 	[UIApplication sharedApplication].statusBarHidden = NO;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 #pragma mark - Setup
 
 - (void)configureNavigationButtons
@@ -146,12 +141,12 @@
 		[UIAlertView showAlertViewWithWarningTitleAndMessage:NSLocalizedString(@"You must at least select one friend.", nil)];
 		return;
 	}
-	[self.delegate didValidateFriendsInvite:[self getSelectedFriendList]];
+	[self.delegate didValidateFriendsInvite:[self retrieveSelectedFriendList]];
 }
 
 #pragma mark - Helper
 
-- (NSArray *)getSelectedFriendList
+- (NSArray *)retrieveSelectedFriendList
 {
 	NSMutableArray *selectedFriends = [NSMutableArray new];
 	for (NSIndexPath *currentIndexPath in self.selectedCells) {
